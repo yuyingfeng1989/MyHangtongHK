@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/iv_equipment_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:id="@+id/tv_equipment_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_equipment_image"
+            android:layout_marginTop="20dp"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+
+            android:textSize="15sp" />
+<!--android:text="@string/app_name"-->
+        <RelativeLayout
+            android:id="@+id/qrcode_layout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/tv_equipment_info"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="25dp" >
+
+            <TextView
+                android:id="@+id/tv_equip_id"
+                style="@style/text_lable_grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/tracker_id" />
+
+            <com.bluebud.view.ClearEditText
+                android:id="@+id/et_equip_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/ib_get_qrcode"
+                android:layout_toRightOf="@+id/tv_equip_id"
+                android:background="@null"
+                android:hint="@string/import_serail_code"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/edit_hint"
+                android:textSize="@dimen/text_15" />
+
+            <ImageButton
+                android:id="@+id/ib_get_qrcode"
+                style="@style/btn_theme_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/pic_qrcode_selector"
+                android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/cut_line1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/qrcode_layout"
+            android:layout_marginLeft="15dp"
+            android:background="@color/grey_bg"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/sim_layout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/cut_line1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_sim_code"
+                style="@style/text_lable_grey"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/device_sim_no" />
+
+            <com.bluebud.view.ClearEditText
+                android:id="@+id/et_sim_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_sim_code"
+                android:background="@null"
+                android:hint="@string/import_sim_code"
+                android:inputType="number"
+                android:paddingLeft="15dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/edit_hint"
+                android:textSize="@dimen/text_15" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/cut_line2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/sim_layout"
+            android:layout_marginLeft="15dp"
+            android:background="@color/grey_bg" />
+
+        <LinearLayout
+            android:id="@+id/ll_tracker_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cut_line2"
+           android:visibility="gone"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/text_lable_grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/apply_range" />
+
+            <Spinner
+                android:id="@+id/spinner_range"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:background="@color/transparent"
+                android:padding="10dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_bind"
+            style="@style/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@id/ll_tracker_type"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="11dp"
+            android:text="@string/bind" />
+
+        <TextView
+            android:id="@+id/tv_notify"
+            style="@style/text_points"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_bind"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:lineSpacingExtra="6dp"
+            android:text="@string/bind_tracker_prompt" />
+
+        <TextView
+            android:id="@+id/tv_enter_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_notify"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:lineSpacingExtra="6dp"
+            android:text="@string/walk_around"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:visibility="invisible"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/tv_tips1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="30dp"
+            android:text="@string/no_equipment_tip"
+            android:textColor="#dddedd"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_buy_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/tv_tips1"
+            android:paddingBottom="30dp"
+            android:text="@string/buy_now"
+            android:textColor="#3e6664"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

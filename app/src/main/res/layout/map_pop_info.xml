@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_location_info_window"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:background="@drawable/map_pop">
+
+    <com.bluebud.view.CircleImageView
+        android:id="@+id/iv_tracker_image"
+        android:layout_width="@dimen/head_width"
+        android:layout_height="@dimen/head_height"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="13dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/iv_tracker_image"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/map_info_title"
+                style="@style/text_base_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textSize="@dimen/text_17" />
+
+            <TextView
+                android:id="@+id/map_info_speed"
+                style="@style/text_base_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/map_info_title"
+                android:textSize="@dimen/text_17" />
+
+
+            <ImageView
+                android:id="@+id/iv_power"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="13dp"
+                android:src="@drawable/anchor_icon" />
+
+            <ImageView
+                android:id="@+id/iv_location_way"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="45dp"
+                android:layout_toLeftOf="@id/iv_power"
+                android:src="@drawable/icon_wifi"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <!-- <TextView
+             android:id="@+id/map_info_snippet"
+             style="@style/text_base_white"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginRight="5dp"
+             android:layout_marginTop="5dp"
+             android:gravity="left" />-->
+
+        <TextView
+            android:id="@+id/map_info_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="8dp"
+            android:gravity="left"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_11" />
+    </LinearLayout>
+
+</RelativeLayout>

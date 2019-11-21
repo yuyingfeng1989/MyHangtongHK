@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#a0000000" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/background_gray" >
+
+            <Button
+                android:id="@+id/btn_item1"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:paddingLeft="15dp"
+                android:background="@null"
+                android:text="@string/cancel"
+                android:textColor="@color/bg_theme"
+                android:textSize="@dimen/text_15" />
+            <TextView 
+                android:id="@+id/tv_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_17"
+                android:layout_centerInParent="true"
+                />
+
+            <Button
+                android:id="@+id/btn_item2"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:paddingRight="15dp"
+                android:background="@null"
+                android:text="@string/confirm"
+                android:textColor="@color/bg_theme"
+                android:textSize="@dimen/text_15" />
+        </RelativeLayout>
+
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+           >
+            <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:layout_alignParentLeft="true"
+            android:visibility="visible"
+            android:weightSum="2" >
+
+            <com.liteguardian.wheelview.WheelView
+                android:id="@+id/hour_on"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+
+            <com.liteguardian.wheelview.WheelView
+                android:id="@+id/mins_on"
+                android:layout_width="0dp"
+                android:layout_gravity="left"
+              android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_18"
+                android:text="@string/to1"/>
+            </LinearLayout>
+            
+            
+            <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:layout_alignParentRight="true"
+            android:visibility="visible"
+            android:weightSum="2" >
+
+            <com.liteguardian.wheelview.WheelView
+                android:id="@+id/hour_off"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+
+            <com.liteguardian.wheelview.WheelView
+                android:id="@+id/mins_off"
+                android:layout_width="0dp"
+                android:layout_gravity="left"
+              android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+            
+        </LinearLayout>
+   
+    </LinearLayout>
+
+</RelativeLayout>

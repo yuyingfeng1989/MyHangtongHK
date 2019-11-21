@@ -1,0 +1,247 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#a0000000" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_gray"
+            android:orientation="horizontal" >
+
+            <Button
+                android:paddingLeft="15dp"
+                android:id="@+id/btn_item1"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@null"
+                android:text="@string/cancel"
+                android:textColor="@color/bg_theme"
+                android:textSize="@dimen/text_15" />
+
+            <TextView
+                android:id="@+id/tv_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/black"
+                android:visibility="invisible"
+                android:textSize="@dimen/text_17" />
+
+            <Button
+                android:paddingRight="15dp"
+                android:id="@+id/btn_item2"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:text="@string/confirm"
+                android:textColor="@color/bg_theme"
+                android:textSize="@dimen/text_15" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:background="@color/white"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/cb_week1"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:button="@drawable/checkbox_selector"
+                    android:checked="false"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:text="@string/week_1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_16" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:background="@color/background_gray" />
+
+                <CheckBox
+                    android:id="@+id/cb_week2"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:button="@drawable/checkbox_selector"
+                    android:checked="false"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:text="@string/week_2"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_16" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:background="@color/background_gray" />
+
+                <CheckBox
+                    android:id="@+id/cb_week3"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:button="@drawable/checkbox_selector"
+                    android:checked="false"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:text="@string/week_3"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_16" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:background="@color/background_gray" />
+
+                <CheckBox
+                    android:id="@+id/cb_week4"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:button="@drawable/checkbox_selector"
+                    android:checked="false"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:text="@string/week_4"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_16" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:background="@color/background_gray" />
+
+                <CheckBox
+                    android:id="@+id/cb_week5"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:button="@drawable/checkbox_selector"
+                    android:checked="false"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:text="@string/week_5"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_16" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:background="@color/background_gray" />
+
+                <CheckBox
+                    android:id="@+id/cb_week6"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:button="@drawable/checkbox_selector"
+                    android:checked="false"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:text="@string/week_6"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_16" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:background="@color/background_gray" />
+
+                <CheckBox
+                    android:id="@+id/cb_week7"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:button="@drawable/checkbox_selector"
+                    android:checked="false"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:text="@string/week_7"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_16" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:background="@color/background_gray" />
+            </LinearLayout>
+        </ScrollView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:button="@drawable/checkbox_selector"
+                android:checked="false"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:text="@string/rong"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:background="@color/background_gray" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:button="@drawable/checkbox_selector"
+                android:checked="false"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:text="@string/vibrat"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:background="@color/background_gray" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:button="@drawable/checkbox_selector"
+                android:checked="false"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:text="@string/vibrat_rong"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

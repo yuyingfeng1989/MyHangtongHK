@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="horizontal">
+
+
+    <!-- 电话本 -->
+
+    <LinearLayout
+        android:id="@+id/ll_phone_book"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/list_item_selector"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/phone_book" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="17dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/telephone_book"
+            android:textColor="@color/text_3"
+            android:textSize="@dimen/text_12" />
+    </LinearLayout>
+    <!-- 上课禁用， -->
+
+    <LinearLayout
+        android:id="@+id/ll_class_disabled"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/list_item_selector"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/disable_class" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="17dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/class_disabled"
+            android:textColor="@color/text_3"
+            android:textSize="@dimen/text_12" />
+    </LinearLayout>
+
+    <!-- 开关机 -->
+
+    <LinearLayout
+        android:id="@+id/ll_timer_switch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/list_item_selector"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/timer_switch" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="17dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/time_switch"
+            android:textColor="@color/text_3"
+            android:textSize="@dimen/text_12" />
+    </LinearLayout>
+    <!-- 提醒小助手 -->
+
+    <LinearLayout
+        android:id="@+id/ll_remind_assistant"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/list_item_selector"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/remind_assistant" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="17dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/lift_helper"
+            android:textColor="@color/text_3"
+            android:textSize="@dimen/text_12" />
+    </LinearLayout>
+
+</LinearLayout>

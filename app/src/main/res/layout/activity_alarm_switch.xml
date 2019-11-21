@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+   <!-- <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/background_gray" />-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_gray"
+            android:orientation="vertical">
+
+          <!--  <RelativeLayout
+                android:id="@+id/rl_alarm1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:text="@string/remind_mode"
+                    android:textColor="@color/bg_white_bg_pressed"
+                    android:textSize="@dimen/text_14" />
+            </RelativeLayout>-->
+
+          <!--  <LinearLayout
+                android:id="@+id/ll_alarm2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_ring"
+                        style="@style/text_base_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:text="@string/ring" />
+
+                    <CheckBox
+                        android:id="@+id/ring_switch_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/cb_switch_bg"
+                        android:button="@null" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:background="@color/background_gray" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_shake"
+                        style="@style/text_base_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:text="@string/shake" />
+
+                    <CheckBox
+                        android:id="@+id/shake_switch_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/cb_switch_bg"
+                        android:button="@null" />
+
+                </RelativeLayout>
+
+            </LinearLayout>-->
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/rl_alarm3"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginLeft="15dp"-->
+                    <!--android:paddingBottom="15dp"-->
+                    <!--android:paddingTop="15dp"-->
+                    <!--android:text="@string/alarm_setting"-->
+                    <!--android:textColor="@color/bg_white_bg_pressed"-->
+                    <!--android:textSize="@dimen/text_14" />-->
+            <!--</RelativeLayout>-->
+
+            <com.bluebud.view.MyListview
+                android:id="@+id/lv_alarm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white"
+                android:cacheColorHint="@color/transparent"
+                android:divider="@null"></com.bluebud.view.MyListview>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

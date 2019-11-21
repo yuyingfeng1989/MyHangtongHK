@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_gray"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_background_height"
+                android:background="@color/background_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_white_stroke"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/ll_sim"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/text_base_black"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1.5"
+                        android:gravity="left"
+                        android:text="@string/apn_sim" />
+
+                    <EditText
+                        android:id="@+id/et_sim"
+                        style="@style/edit_no_background"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="3.0"
+                        android:hint="@string/phone_number_hint"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:textColorHint="@color/edit_hint" />
+                </LinearLayout>
+
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    layout="@layout/layout_line_landscape" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/text_base_black"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1.5"
+                        android:gravity="left"
+                        android:text="@string/apn_text" />
+
+                    <EditText
+                        android:id="@+id/et_apn"
+                        style="@style/edit_no_background"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="3.0"
+                        android:hint="@string/input_must"
+                        android:imeOptions="actionNext"
+                        android:textColorHint="@color/edit_hint" />
+                </LinearLayout>
+                      <LinearLayout 
+                          android:id="@+id/ll_mnc_mcc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    layout="@layout/layout_line_landscape" />
+          
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/text_base_black"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1.5"
+                        android:gravity="left"
+                        android:text="@string/mcc" />
+
+                    <EditText
+                        android:id="@+id/et_mcc"
+                        style="@style/edit_no_background"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="3.0"
+                        android:hint="@string/mcc_hint"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:imeOptions="actionDone"
+                        android:textColorHint="@color/edit_hint" />
+                </LinearLayout>
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    layout="@layout/layout_line_landscape" />
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/text_base_black"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1.5"
+                        android:gravity="left"
+                        android:text="@string/mnc" />
+
+                    <EditText
+                       android:id="@+id/et_mnc"
+                        style="@style/edit_no_background"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="3.0"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:hint="@string/mnc_hint"
+                        android:imeOptions="actionDone"
+                        android:textColorHint="@color/edit_hint" />
+                </LinearLayout>
+                </LinearLayout>
+
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    layout="@layout/layout_line_landscape" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/text_base_black"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1.5"
+                        android:gravity="left"
+                        android:text="@string/apn_username_text" />
+
+                    <EditText
+                        android:id="@+id/et_username"
+                        style="@style/edit_no_background"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="3.0"
+                        android:hint="@string/ple_input_name"
+                        android:imeOptions="actionNext"
+                        android:textColorHint="@color/edit_hint" />
+                </LinearLayout>
+
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    layout="@layout/layout_line_landscape" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/text_base_black"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1.5"
+                        android:gravity="left"
+                        android:text="@string/apn_passwd_text" />
+
+                    <EditText
+                        android:id="@+id/et_passwd"
+                        style="@style/edit_no_background"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="3.0"
+                        android:hint="@string/ple_input_passward"
+                        android:imeOptions="actionDone"
+                        android:textColorHint="@color/edit_hint" />
+                </LinearLayout>
+                 
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_commit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_theme_selector"
+                android:paddingBottom="14dp"
+                android:paddingTop="14dp"
+                android:text="@string/submit"
+                android:textColor="@color/btn_text_selected"
+                android:textSize="@dimen/text_17" />
+
+            <TextView
+                android:id="@+id/tv_prompt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="6dp"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="12dp"
+                android:paddingTop="20dp"
+                android:text="@string/apn_hint"
+                style="@style/text_points"
+               />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_gray" />
+    </LinearLayout>
+
+</LinearLayout>

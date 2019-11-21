@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_toplay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/obd_0e0e0e">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:paddingLeft="15dp"
+            android:paddingRight="50dp"
+            android:src="@drawable/btn_back_selector" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:singleLine="true"
+            android:text="@string/trail"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_report"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="60dp"
+            android:paddingRight="15dp"
+            android:clickable="true"
+            android:src="@drawable/menu_track_report" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_date_setting"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/rl_title"
+        android:background="@color/obd_bf37c9ff"
+        android:baselineAligned="true">
+
+        <ImageView
+            android:id="@+id/iv_last_day"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/icon_track_back_normal" />
+
+        <ImageView
+            android:id="@+id/iv_next_day"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@null"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/icon_track_next_normal" />
+
+        <LinearLayout
+            android:id="@+id/rl_show_calender"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:contentDescription="@null"
+                android:src="@drawable/icon_track_calendar" />
+
+            <TextView
+                android:id="@+id/tv_current_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:contentDescription="@null"
+                android:src="@drawable/icon_track_down_normal" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+
+    <FrameLayout
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ic_car_status"
+        android:layout_below="@+id/rl_date_setting">
+
+        <!--<com.baidu.mapapi.map.MapView-->
+            <!--android:id="@+id/bmap_view"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:clickable="true" />-->
+    </FrameLayout>
+    <!-- 一天中一段里程的详情-->
+    <include
+        android:id="@+id/ic_car_status"
+        layout="@layout/layout_car_tracks_status_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical">
+
+    <!-- 免打扰 -->
+    <!--time1-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp"
+            android:id="@+id/ll_disturb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/disturb_tv_on1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="00:00"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16" />
+
+            <TextView
+                android:id="@+id/to1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_toRightOf="@id/disturb_tv_on1"
+                android:text="@string/to"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16" />
+
+            <TextView
+                android:id="@+id/disturb_tv_off1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/to1"
+                android:text="00:00"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/switch_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/cb_switch_bg"
+            android:button="@null" />
+
+        <View
+            android:layout_below="@id/ll_disturb1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/background_gray" />
+    </RelativeLayout>
+
+
+    <!--time2-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp"
+            android:id="@+id/ll_disturb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/disturb_tv_on2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="00:00"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16" />
+
+            <TextView
+                android:id="@+id/to2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_toRightOf="@id/disturb_tv_on2"
+                android:text="@string/to"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16" />
+
+            <TextView
+                android:id="@+id/disturb_tv_off2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/to2"
+                android:text="00:00"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/switch_button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/cb_switch_bg"
+            android:button="@null" />
+
+        <View
+            android:layout_below="@id/ll_disturb2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/background_gray" />
+    </RelativeLayout>
+
+
+    <!--time3-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp"
+            android:id="@+id/ll_disturb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/disturb_tv_on3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="00:00"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16" />
+
+            <TextView
+                android:id="@+id/to3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_toRightOf="@id/disturb_tv_on3"
+                android:text="@string/to"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16" />
+
+            <TextView
+                android:id="@+id/disturb_tv_off3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/to3"
+                android:text="00:00"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/switch_button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/cb_switch_bg"
+            android:button="@null" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/background_gray" />
+
+    <!-- 重复 -->
+    <RelativeLayout
+        android:id="@+id/rl_disturb_repeat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="20dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            style="@style/text_base_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/repeat" />
+
+        <TextView
+            android:layout_toLeftOf="@+id/iv_next"
+            android:id="@+id/tv_time_repeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/text_b2"
+            android:textSize="@dimen/text_16" />
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:visibility="invisible"
+            android:id="@+id/iv_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:background="@drawable/pic_next_selector" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="border_overlay" format="boolean" />
+    </declare-styleable>
+
+    <string-array name="ranges">
+        <item>Personal</item>
+        <item>Pet</item>
+        <item>Private car</item>
+        <item>Motorcycle</item>
+    </string-array>
+    <string-array name="alarm_type">
+         <item>ACC off</item>
+        <item>SOS alarm</item>
+        <item>GPS fault alarm</item>
+        <item>Speeding alarm</item>
+        <item>Main power cut alarm</item>
+        <item>Low voltage alarm</item>
+        <item>Cut oil/electric alarm</item>
+        <item>Towing alarm</item>
+        <item>Overstep the boundary alarm</item>
+        <item>Crash alarm</item>
+        <item>Car theft alarm</item>
+        <item>Speeding alarm</item>
+        <item>Low voltage alarm</item>
+        <item>High engine coolant temperature alarm</item>
+        <item>Hard acceleration alarm</item>
+        <item>Hard deceleration alarm</item>
+        <item>Idle engine alarm</item>
+        <item>Towing alarm</item>
+        <item>High RPM alarm</item>
+        <item>Power on alarm</item>
+        <item>Exhaust Emission alarm</item>
+        <item>Quick lane change alarm</item>
+        <item>Sharp turn alarm</item>
+        <item>Fatigue driving alarm</item>
+        <item>Unplug alarm</item>
+        <item>Regional alarm</item>
+        <item>Emergency alarm</item>
+        <item>Crash alarm</item>
+        <item>Tamper alarm</item>
+        <item>Illegal entrance alarm</item>
+        <item>Illegal ignition on alarm</item>
+        <item>OBD trimming alarm</item>
+        <item>Ignition on alarm</item>
+        <item>Ignition off alarm</item>
+        <item>MIL alarm</item>
+        <item>Unlock alarm</item>
+        <item>No card presented alarm</item>
+        <item>Dangerous driving alarm</item>
+        <item>Vibration alarm</item>
+        <item>Vibration alarm</item>
+        <item>Take-off Alarm</item>
+    </string-array>
+    <string-array name="time_zone">
+        <item id="0">select</item>
+        <item id="1">(GMT-12:00) International Date Line West</item>
+        <item id="2">(GMT-11:00) Midway Island, Samoa</item>
+        <item id="3">(GMT-10:00) Hawaii</item>
+        <item id="4">(GMT-09:00) Alaska</item>
+        <item id="5">(GMT-08:00) Tijuana, Baja California</item>
+        <item id="6">(GMT-08:00) Pacific Time (US, Canada)</item>
+        <item id="7">(GMT-07:00) Chihuahua, La Paz, Mazatlan</item>
+        <item id="8">(GMT-07:00) Mountain Time (US, Canada)</item>
+        <item id="9">(GMT-07:00) Arizona</item>
+        <item id="10">(GMT-06:00) Guadalajara, Mexico City, Monterrey</item>
+        <item id="11">(GMT-06:00) Saskatchewan</item>
+        <item id="12">(GMT-06:00) Central Time (US, Canada)</item>
+        <item id="13">(GMT-06:00) Central America</item>
+        <item id="14">(GMT-05:00) Bota, Lima, Quito, Rio Branco</item>
+        <item id="15">(GMT-05:00) Eastern Time (US, Canada)</item>
+        <item id="16">(GMT-05:00) Indiana (East)</item>
+        <item id="17">(GMT-04:30) Caracas</item>
+        <item id="18">(GMT-04:00) Atlantic Time (Canada)</item>
+        <item id="19">(GMT-04:00) La Paz</item>
+        <item id="20">(GMT-04:00) Manaus</item>
+        <item id="21">(GMT-04:00) Santia</item>
+        <item id="22">(GMT-03:30) Newfoundland</item>
+        <item id="23">(GMT-03:00) Brasilia</item>
+        <item id="24">(GMT-03:00) Buenos Aires</item>
+        <item id="25">(GMT-03:00) Greenland</item>
+        <item id="26">(GMT-03:00) Montevideo</item>
+        <item id="27">(GMT-03:00) Georgetown</item>
+        <item id="28">(GMT-02:00) Mid-Atlantic</item>
+        <item id="29">(GMT-01:00) Cape Verde Is.</item>
+        <item id="30">(GMT-01:00) Azores</item>
+        <item id="31">(GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London</item>
+        <item id="32">(GMT) Casablanca</item>
+        <item id="33">(GMT) Monrovia, Reykjavik</item>
+        <item id="34">(GMT+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna</item>
+        <item id="35">(GMT+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague</item>
+        <item id="36">(GMT+01:00) Brussels, Copenhagen, Madrid, Paris</item>
+        <item id="37">(GMT+01:00) Sarajevo, Skopje, Warsaw, Zagreb</item>
+        <item id="38">(GMT+01:00) West Central Africa</item>
+        <item id="45">(GMT+01:00) Windhoek</item>
+        <item id="39">(GMT+02:00) Amman</item>
+        <item id="40">(GMT+02:00) Beirut</item>
+        <item id="41">(GMT+02:00) Harare, Pretoria</item>
+        <item id="42">(GMT+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius</item>
+        <item id="43">(GMT+02:00) Cairo</item>
+        <item id="44">(GMT+02:00) Minsk</item>
+        <item id="46">(GMT+02:00) Athens, Bucharest, Istanbul</item>
+        <item id="47">(GMT+02:00) Jerusalem</item>
+        <item id="48">(GMT+03:00) Baghdad</item>
+        <item id="49">(GMT+03:00) Tbilisi</item>
+        <item id="50">(GMT+03:00) Kuwait, Riyadh</item>
+        <item id="51">(GMT+03:00) Moscow, St. Petersburg, Volgrad</item>
+        <item id="52">(GMT+03:00) Nairobi</item>
+        <item id="53">(GMT+03:30) Tehran</item>
+        <item id="54">(GMT+04:00) Abu Dhabi, Muscat</item>
+        <item id="55">(GMT+04:00) Baku</item>
+        <item id="56">(GMT+04:00) Yerevan</item>
+        <item id="57">(GMT+04:00) Port Louis</item>
+        <item id="58">(GMT+04:30) Kabul</item>
+        <item id="59">(GMT+05:00) Tashkent</item>
+        <item id="60">(GMT+05:00) Ekaterinburg</item>
+        <item id="61">(GMT+05:00) Islamabad, Karachi</item>
+        <item id="62">(GMT+05:30) Chennai, Kolkata, Mumbai, New Delhi</item>
+        <item id="63">(GMT+05:30) Sri Jayawardenepura</item>
+        <item id="64">(GMT+05:45) Kathmandu</item>
+        <item id="65">(GMT+06:00) Almaty, Novosibirsk</item>
+        <item id="66">(GMT+06:00) Astana, Dhaka</item>
+        <item id="67">(GMT+06:30) Yann (Ranon)</item>
+        <item id="68">(GMT+07:00) Krasnoyarsk</item>
+        <item id="69">(GMT+07:00) Bangkok, Hanoi, Jakarta</item>
+        <item id="70">(GMT+08:00) Beijing, Chongqing, Hong Kong, Urumqi</item>
+        <item id="71">(GMT+08:00) Kuala Lumpur, Singapore</item>
+        <item id="72">(GMT+08:00) Perth</item>
+        <item id="73">(GMT+08:00) Taipei</item>
+        <item id="74">(GMT+08:00) Irkutsk, Ulaan Bataar</item>
+        <item id="75">(GMT+09:00) Osaka, Sapporo, Tokyo</item>
+        <item id="76">(GMT+09:00) Seoul</item>
+        <item id="77">(GMT+09:00) Yakutsk</item>
+        <item id="78">(GMT+09:30) Adelaide</item>
+        <item id="79">(GMT+09:30) Darwin</item>
+        <item id="80">(GMT+10:00) Brisbane</item>
+        <item id="81">(GMT+10:00) Vladivostok</item>
+        <item id="82">(GMT+10:00) Guam, Port Moresby</item>
+        <item id="83">(GMT+10:00) Hobart</item>
+        <item id="84">(GMT+10:00) Canberra, Melbourne, Sydney</item>
+        <item id="85">(GMT+11:00) Magadan, Solomon Is., New Caledonia</item>
+        <item id="86">(GMT+12:00) Auckland, Wellington</item>
+        <item id="87">(GMT+12:00) Fiji, Kamchatka, Marshall Is.</item>
+        <item id="88">(GMT+13:00) Nuku\'alofa</item>
+    </string-array>
+    <string-array name="contacts_name">
+        <item>DAD</item>
+		<item>MUM</item>
+		<item> grandpa</item>
+		<item> grandma</item>
+		<item> grandpa </item>
+		<item> grandma </item>
+		<item>elder brother</item>
+		<item>elder sister</item>
+		<item>younger brother</item>
+		<item>younger sister</item>
+    </string-array>
+   
+    <string-array name="fence_range">
+        <item> 100m&#160;&#160;</item>
+        <item> 200m&#160;&#160; </item>
+        <item>300m&#160;&#160;</item>
+        <item>500m&#160;&#160;</item>
+        <item>1000m</item>
+        <item>3000m</item>
+        <item>5000m</item>
+    </string-array>
+
+
+    <string-array name="contacts_name1">
+        <item>Son</item>
+        <item>Daughter</item>
+        <item>Nickname</item>
+        <item>Nickname</item>
+        <item>Nickname</item>
+        <item>Nickname</item>
+        <item>Nickname</item>
+        <item>Nickname</item>
+        <item>Nickname</item>
+        <item>Nickname</item>
+         </string-array>
+    
+</resources>

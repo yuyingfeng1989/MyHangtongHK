@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- 车牌号 -->
+
+    <LinearLayout
+        android:id="@+id/ll_car_plate_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_item_selector"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/text_lable"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_weight="3"
+            android:text="@string/car_plate_number" />
+
+        <TextView
+            android:id="@+id/et_car_plate_number"
+            style="@style/edit_no_background"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.5" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/pic_next_selector" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/layout_line_landscape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin" />
+
+    <!--车架号-->
+    <LinearLayout
+        android:id="@+id/ll_car_vin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_item_selector"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/text_lable"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_weight="3"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="@string/car_vin" />
+
+        <TextView
+            android:id="@+id/et_car_vin"
+            style="@style/edit_no_background"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.5" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/pic_next_selector" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/layout_line_landscape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin" />
+
+
+    <!-- 车型 -->
+
+    <LinearLayout
+        android:id="@+id/ll_car_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_item_selector"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_car_type"
+            style="@style/text_lable"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_weight="3"
+            android:text="@string/car_type" />
+
+        <TextView
+            android:singleLine="true"
+            android:id="@+id/et_car_type"
+            style="@style/edit_no_background"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.5" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/pic_next_selector" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/layout_line_landscape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin" />
+    <!-- 购车时间 -->
+
+    <LinearLayout
+        android:id="@+id/ll_car_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_item_selector"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/text_lable"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_weight="3"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="@string/car_time" />
+
+        <TextView
+            android:id="@+id/et_car_time"
+            style="@style/edit_no_background"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.5" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/pic_next_selector" />
+    </LinearLayout>
+
+
+    <include
+        layout="@layout/layout_line_landscape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin" />
+    <!-- 紧急联系人 -->
+
+    <LinearLayout
+        android:id="@+id/ll_tracker_car_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_item_selector"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/text_lable"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_weight="3"
+            android:text="@string/input_tracker_phone" />
+
+        <TextView
+            android:id="@+id/et_tracker_phone1"
+            style="@style/edit_no_background"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.5" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/pic_next_selector" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/layout_line_landscape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin" />
+
+    <!-- 最后定位地点 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/text_lable"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_weight="3"
+            android:text="@string/edit_address_lose" />
+
+        <TextView
+            style="@style/edit_no_background"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="@string/no_gps" />
+    </LinearLayout>
+
+</LinearLayout>

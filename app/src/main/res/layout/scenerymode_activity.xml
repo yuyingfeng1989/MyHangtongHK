@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ListView
+        android:paddingLeft="15dp"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        android:dividerHeight="0.5dp"
+        android:divider="@color/background_gray"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listview_990"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:id="@+id/ll_scenery990"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/text_scenery990"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:textColor="@color/color_313133"
+            android:text="@string/vibrating_990" />
+
+        <CheckBox
+            android:id="@+id/checkbox_scenery990"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center"
+            android:layout_weight="0"
+            android:clickable="false"
+            android:focusable="false"
+            android:button="@drawable/scenery990_selector"
+            android:layout_marginRight="12dp"/>
+    </LinearLayout>
+
+</LinearLayout>

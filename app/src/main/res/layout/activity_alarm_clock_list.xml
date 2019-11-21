@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/background_gray" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <!--  -->
+
+            <LinearLayout
+                android:id="@+id/ll_alarm_clock1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/list_item_selector"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="5"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_time1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="00:00"
+                        android:textColor="@color/text_2e"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tv_week1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        
+                        android:textColor="@color/text_a7"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="@dimen/text_13" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1" >
+
+                    <CheckBox
+                        android:id="@+id/shake_switch_button1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/cb_switch_bg"
+                        android:button="@null" />
+                </LinearLayout>
+            </LinearLayout>
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/background_gray"/>
+            
+            
+            <!--  -->
+
+            <LinearLayout
+                android:id="@+id/ll_alarm_clock2"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/list_item_selector"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="5"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_time2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="00:00"
+                        android:textColor="@color/text_2e"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tv_week2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                      
+                        android:textColor="@color/text_a7"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="@dimen/text_13" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1" >
+
+                    <CheckBox
+                        android:id="@+id/shake_switch_button2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/cb_switch_bg"
+                        android:button="@null" />
+                </LinearLayout>
+            </LinearLayout>
+            
+            <!--  -->
+             <View 
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/background_gray"/>
+            
+
+            <LinearLayout
+                android:id="@+id/ll_alarm_clock3"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/list_item_selector"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="5"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_time3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="00:00"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/text_2e"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tv_week3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                   
+                        android:textColor="@color/text_a7"
+                        android:textSize="@dimen/text_13" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1" >
+
+                    <CheckBox
+                        android:id="@+id/shake_switch_button3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/cb_switch_bg"
+                        android:button="@null" />
+                </LinearLayout>
+            </LinearLayout>
+            
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

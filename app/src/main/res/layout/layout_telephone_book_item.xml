@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+   <RelativeLayout
+            android:id="@+id/rl_account_information_card"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/list_item_selector" >
+
+            <com.bluebud.view.CircleImageView
+                android:id="@+id/iv_tracker_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@+id/iv_tracker_image"
+                android:layout_toLeftOf="@+id/tele_dv"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/text_3"
+                    android:textSize="@dimen/text_17" />
+
+                <TextView
+                    android:id="@+id/tv_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_3"
+                    android:textSize="@dimen/text_14" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/tele_dv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/icon_next" />
+        </RelativeLayout>
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/background_gray"/>
+        
+   
+   
+    <LinearLayout
+        android:id="@+id/ll_prompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_gray"
+        android:orientation="vertical" 
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_prompt"
+             style="@style/text_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:lineSpacingExtra="6dp"
+            android:text="@string/telephone_book_prompt" />
+    </LinearLayout>
+
+</LinearLayout>

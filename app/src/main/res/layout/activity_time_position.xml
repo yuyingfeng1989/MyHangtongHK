@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:scrollbars="none" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:background="@color/background_gray"
+        android:orientation="vertical">
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_background_height"
+        android:background="@color/background_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_stroke"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin" >
+
+            <RadioButton
+                android:id="@+id/rbtn_one_min"
+                style="@style/time_location_setting"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="@string/time_1" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_line_landscape" />
+
+            <RadioButton
+                android:id="@+id/rbtn_three_min"
+                style="@style/time_location_setting"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="@string/time_3" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_line_landscape" />
+
+            <RadioButton
+                android:id="@+id/rbtn_five_min"
+                style="@style/time_location_setting"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="@string/time_5" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_line_landscape" />
+
+            <RadioButton
+                android:id="@+id/rbtn_ten_min"
+                style="@style/time_location_setting"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="@string/time_10" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_line_landscape" />
+
+            <RadioButton
+                android:id="@+id/rbtn_thirty_min"
+                style="@style/time_location_setting"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="@string/time_30" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_line_landscape" />
+
+            <RadioButton
+                android:id="@+id/rbtn_sixty_min"
+                style="@style/time_location_setting"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="@string/time_60" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_line_landscape" />
+
+            <RadioButton
+                android:id="@+id/rbtn_close"
+                style="@style/time_location_setting"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="@string/time_close" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/group1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_stroke"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:visibility="gone" >
+
+            <RadioButton
+                android:id="@+id/rbtn_forth_second"
+                style="@style/time_location_setting"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="@string/time_40_second" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_line_landscape" />
+
+            <RadioButton
+                android:id="@+id/rbtn_one_min1"
+                style="@style/time_location_setting"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="@string/time_1" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_line_landscape" />
+
+            <RadioButton
+                android:id="@+id/rbtn_three_min1"
+                style="@style/time_location_setting"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="@string/time_3" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_line_landscape" />
+
+            <RadioButton
+                android:id="@+id/rbtn_five_min1"
+                style="@style/time_location_setting"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="@string/time_5" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_line_landscape" />
+
+            <RadioButton
+                android:id="@+id/rbtn_ten_min1"
+                style="@style/time_location_setting"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="@string/time_10" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_line_landscape" />
+
+            <RadioButton
+                android:id="@+id/rbtn_thirty_min1"
+                style="@style/time_location_setting"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="@string/time_30" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_line_landscape" />
+
+            <RadioButton
+                android:id="@+id/rbtn_sixty_min1"
+                style="@style/time_location_setting"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="@string/time_60" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_line_landscape" />
+
+            <RadioButton
+                android:id="@+id/rbtn_close1"
+                style="@style/time_location_setting"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="@string/time_close" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/group2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_stroke"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:visibility="gone" >
+
+            <RadioButton
+                android:id="@+id/rbtn_ten_second"
+                style="@style/time_location_setting"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="@string/time_10_second" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_line_landscape" />
+
+            <RadioButton
+                android:id="@+id/rbtn_forth_second2"
+                style="@style/time_location_setting"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="@string/time_40_second" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_line_landscape" />
+
+            <RadioButton
+                android:id="@+id/rbtn_one_min2"
+                style="@style/time_location_setting"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="@string/time_1" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_line_landscape" />
+
+            <RadioButton
+                android:id="@+id/rbtn_three_min2"
+                style="@style/time_location_setting"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="@string/time_3" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_line_landscape" />
+
+            <RadioButton
+                android:id="@+id/rbtn_five_min2"
+                style="@style/time_location_setting"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="@string/time_5" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_line_landscape" />
+
+            <RadioButton
+                android:id="@+id/rbtn_ten_min2"
+                style="@style/time_location_setting"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="@string/time_10" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_line_landscape" />
+
+            <RadioButton
+                android:id="@+id/rbtn_thirty_min2"
+                style="@style/time_location_setting"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="@string/time_30" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_line_landscape" />
+
+            <RadioButton
+                android:id="@+id/rbtn_sixty_min2"
+                style="@style/time_location_setting"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="@string/time_60" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_line_landscape" />
+
+            <RadioButton
+                android:id="@+id/rbtn_close2"
+                style="@style/time_location_setting"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="@string/time_close" />
+        </RadioGroup>
+         <RadioGroup
+            android:id="@+id/group4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_stroke"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:visibility="gone" >
+
+            <RadioButton
+                android:id="@+id/rbtn_forth_second4"
+                style="@style/time_location_setting"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="@string/time_40_second" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_line_landscape" />
+
+            <RadioButton
+                android:id="@+id/rbtn_one_min4"
+                style="@style/time_location_setting"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="@string/time_1" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_line_landscape" />
+
+            <RadioButton
+                android:id="@+id/rbtn_two_min4"
+                style="@style/time_location_setting"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="@string/time_2" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_line_landscape" />
+
+            <RadioButton
+                android:id="@+id/rbtn_five_min4"
+                style="@style/time_location_setting"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="@string/time_5" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_line_landscape" />
+
+            <RadioButton
+                android:id="@+id/rbtn_ten_min4"
+                style="@style/time_location_setting"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="@string/time_10" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_line_landscape" />
+
+            <RadioButton
+                android:id="@+id/rbtn_thirty_min4"
+                style="@style/time_location_setting"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="@string/time_30" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_line_landscape" />
+
+            <RadioButton
+                android:id="@+id/rbtn_sixty_min4"
+                style="@style/time_location_setting"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="@string/time_60" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_line_landscape" />
+
+            <RadioButton
+                android:id="@+id/rbtn_close4"
+                style="@style/time_location_setting"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="@string/time_close" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/group5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_stroke"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:visibility="gone" >
+
+                <RadioButton
+                    android:id="@+id/rbtn_time1_group5"
+                    style="@style/time_location_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:text="@string/time_1" />
+
+                <include
+                    layout="@layout/layout_line_landscape"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/rbtn_time10_group5"
+                    style="@style/time_location_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:text="@string/time_10" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_line_landscape" />
+
+            <RadioButton
+                android:id="@+id/rbtn_time30_group5"
+                style="@style/time_location_setting"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="@string/time_30" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_line_landscape" />
+
+            <RadioButton
+                android:id="@+id/rbtn_time60_group5"
+                style="@style/time_location_setting"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="@string/time_60" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_line_landscape" />
+
+            <RadioButton
+                android:id="@+id/rbtn_close5"
+                style="@style/time_location_setting"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="@string/time_close" />
+
+        </RadioGroup>
+
+
+
+
+        <Button
+            
+            android:id="@+id/btn_commit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_theme_selector"
+            android:paddingBottom="14dp"
+            android:paddingTop="14dp"
+            android:text="@string/submit"
+            android:visibility="gone"
+            android:textColor="@color/btn_text_selected"
+            android:textSize="@dimen/text_17" />
+
+        <TextView
+          
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:lineSpacingExtra="6dp"
+            android:paddingRight="15dp"
+            android:paddingTop="20dp"
+           
+             style="@style/text_points"
+            android:text="@string/position_notice" />
+    </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

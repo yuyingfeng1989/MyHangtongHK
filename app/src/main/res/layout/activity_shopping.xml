@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <!-- <View
+         android:layout_width="match_parent"
+         android:layout_height="10dp"
+         android:background="@color/background_gray"/>-->
+    <RelativeLayout
+        android:id="@+id/rl_mall"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/bg_theme"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:paddingLeft="15dp"
+            android:paddingRight="80dp"
+            android:src="@drawable/btn_previous_selector" />
+
+        <TextView
+            android:id="@+id/text_mall"
+            style="@style/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:maxEms="9"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="Lite Mall" />
+
+        <ImageView
+            android:id="@+id/litemall_back"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/litemall_back_image"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <com.bluebud.view.ProgressWebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone" />
+
+</LinearLayout>

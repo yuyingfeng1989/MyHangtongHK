@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_white_stroke"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/et_sim_no"
+                style="@style/edit_no_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/input_watch_sim"
+                android:paddingLeft="15dp"
+                android:phoneNumber="true"
+                android:textColorHint="@color/edit_hint" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_theme_selector"
+            android:paddingBottom="14dp"
+            android:paddingTop="14dp"
+            android:text="@string/submit"
+            android:textColor="@color/btn_text_selected"
+            android:textSize="@dimen/text_17" />
+
+        <TextView
+            style="@style/text_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_grey"
+            android:lineSpacingExtra="6dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="20dp"
+            android:text="@string/device_watch_sim_hint" />
+    </LinearLayout>
+
+</ScrollView>

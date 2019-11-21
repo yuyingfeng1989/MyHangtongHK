@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/obd_0e0e0e"
+    android:baselineAligned="true"
+    android:orientation="horizontal">
+    <!--android:layout_height="wrap_content"
+    android:orientation="vertical"-->
+
+
+    <!-- <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:baselineAligned="true"
+         android:orientation="horizontal" >-->
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <!--  <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="16dp"
+              android:src="@drawable/ic_track_mileage"/>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/obd_day_mileage"
+            android:textColor="@color/obd_f5ffffff"
+            android:textSize="@dimen/text_12" />
+
+        <TextView
+            android:id="@+id/tv_mileage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:text="--"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_23" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="16dp"
+             android:src="@drawable/ic_track_time"/>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/time_long"
+            android:textColor="@color/obd_f5ffffff"
+            android:textSize="@dimen/text_12" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:text="00:00"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_23" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!--  <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="16dp"
+              android:src="@drawable/ic_track_fuel"/>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/obd_day_oil"
+            android:textColor="@color/obd_f5ffffff"
+            android:textSize="@dimen/text_12" />
+
+        <TextView
+            android:id="@+id/tv_oil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:text="--"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_23" />
+    </LinearLayout>
+
+    <!--</LinearLayout>-->
+
+</LinearLayout>

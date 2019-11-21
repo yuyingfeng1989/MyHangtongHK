@@ -1,0 +1,46 @@
+﻿/*基础样式
+*/
+*{margin:0;padding:0;}
+body{background:#FFFFFF;font-size:0.75em;min-width:280px;position:relative;z-index:1;font-family:"Microsoft YaHei","Helvetica Neue",Helvetica,"Nimbus Sans L",Arial,"Liberation Sans","Hiragino Sans GB","Wenquanyi Micro Hei","WenQuanYi Zen Hei","ST Heiti",SimHei,"WenQuanYi Zen Hei Sharp",sans-serif;}
+img{border:none;vertical-align:middle;}
+a{text-decoration:none;}
+*,*:before,*:after{box-sizing:border-box;}
+.fl{float:left;}
+.fr{float:right;}
+.clear{clear:both;}
+.none{display:none;}
+/*头部样式
+*/
+.header{height:42px;line-height:42px;padding:0 0.5%;background:#8CC72A;overflow:hidden;text-align:center;}
+.header span{display:inline-block;color:#FFFFFF;font-size:1.0em;font-weight:600;}
+.header span a{font-weight:600;padding:0 3px;color:#FFFFFF;font-size:1.1em;}
+.header span a:hover{}
+.header .title{text-align:center;font-size:1.3em;font-weight:600;}
+
+
+.menu{padding:10px;}
+.menu h2{font-size:1.5em;padding:0 0 10px;}
+.menu dl{padding:10px 0 0;}
+.menu dl dt{padding:0 0 10px;font-size:1.3em;}
+.menu dl dd{padding:10px 0 10px 20px;font-size:1.2em;}
+.menu a{color:#000000;}
+.menu a:hover{color:#F99637;text-decoration:underline;}
+
+.content{padding:10px;}
+.content h3{font-size:1.4em;padding:0 0 10px;color:#57c7c2;}
+.content h4{font-size:1.3em;padding:0 0 10px;color:#57c7c2;}
+.content p{font-size:1.2em;padding:0 0 10px;text-indent:2em;}
+
+table.info{border-collapse:collapse;border-spacing:0;margin:10px 0 10px 30px;}
+table.info tr th,table.info tr td{border:1px solid #DDDDDD;padding:5px 10px;}
+table.info tr th{background:#F5F5F5;font-size:1.2em;}
+
+
+/*页尾样式
+*/
+.footer{margin-top:20px;border-top:3px solid #CCCCCC;padding:15px 0;}
+.footer p{line-height:2.0em;text-align:center;color:#333333;}
+.footer a{font-size:1.0em;color:#333333;padding:0 8px;}
+.footer a:hover{color:#F99637;text-decoration:underline;}
+
+

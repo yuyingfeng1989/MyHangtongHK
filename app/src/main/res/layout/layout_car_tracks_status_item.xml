@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/obd_0e0e0e"
+    android:orientation="vertical">
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        &lt;!&ndash;安全驾驶&ndash;&gt;
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="16dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_safe_driving"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_3"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="18dp"
+                    android:text="@string/safe_driver"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/tv_safe_driving_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_3"
+                android:layout_marginLeft="10dp"
+                android:textSize="36sp"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:text="&#45;&#45;"/>
+        </LinearLayout>
+
+        &lt;!&ndash;经济驾驶&ndash;&gt;
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="16dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_economic_driving"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_3"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="18dp"
+                    android:text="@string/ecological_drive"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/tv_economic_driving_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/text_3"
+                android:textSize="36sp"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:text="&#45;&#45;"/>
+        </LinearLayout>
+        
+    </LinearLayout>
+-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/obd_tv_star"
+            android:textColor="@color/white"
+            android:background="@drawable/track_shape_start" />
+
+        <TextView
+            android:id="@+id/map_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_14" />
+
+        <TextView
+            android:id="@+id/map_start_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:ellipsize="end"
+            android:lines="2"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/obd_tv_end"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/track_shape_end"/>
+        <TextView
+            android:id="@+id/map_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_14" />
+
+        <TextView
+            android:id="@+id/map_end_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:ellipsize="end"
+            android:lines="2"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_14" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_track_mileage" />
+
+            <TextView
+                android:id="@+id/tv_mileage_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="26dp"
+                android:layout_marginTop="14dp"
+                android:text="--km"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_track_time" />
+
+            <TextView
+                android:id="@+id/tv_time_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="26dp"
+                android:layout_marginTop="14dp"
+                android:text="00:00"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_14" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_track_fuel" />
+
+            <TextView
+                android:id="@+id/tv_oil_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="26dp"
+                android:layout_marginTop="14dp"
+                android:text="--L"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_14" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@drawable/list_item_selector"
+    android:minHeight="70dp"
+    android:orientation="horizontal">
+
+    <com.bluebud.view.CircleImageView
+        android:id="@+id/iv_phonebook_image"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/img_defaulthead_628" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginLeft="14dp">
+
+        <TextView
+            android:id="@+id/tv__phonebook_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/text_3"
+            android:textSize="@dimen/text_17" />
+
+        <TextView
+            android:layout_below="@id/tv__phonebook_nickname"
+            android:id="@+id/tv_phonebook_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:singleLine="true"
+            android:textColor="@color/text_3"
+            android:textSize="@dimen/text_14" />
+    </RelativeLayout>
+
+
+</LinearLayout>

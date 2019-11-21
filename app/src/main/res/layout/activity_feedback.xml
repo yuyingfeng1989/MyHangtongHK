@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical" >
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_background_height"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_stroke"
+        android:orientation="vertical" >
+
+
+        <EditText
+            android:id="@+id/et_content"
+            style="@style/edit_no_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:hint="@string/feedback_hint"
+            android:maxHeight="150dp"
+            android:textColorHint="@color/edit_hint"
+            android:minHeight="150dp"
+            android:padding="@dimen/activity_horizontal_margin" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:visibility="gone"
+        android:textColor="@color/btn_text_selected"
+        android:textSize="@dimen/text_17"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+         android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:background="@drawable/btn_theme_selector"
+        android:text="@string/submit" />
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

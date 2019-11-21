@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray">
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/rl_title"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="80dp"-->
+        <!--android:background="@android:color/holo_blue_dark"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/back_image"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:paddingLeft="20dp"-->
+            <!--android:src="@drawable/icon_gaoqiangduyundongzhe" />-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:text="远程拍照" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/text_state"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:clickable="true"-->
+            <!--android:gravity="center"-->
+            <!--android:paddingRight="30dp"-->
+            <!--android:text="选择" />-->
+    <!--</RelativeLayout>-->
+    <include layout="@layout/chat_title_base"
+        android:id="@+id/layout_title_photo"/>
+
+    <com.bluebud.view.RefreshLayout
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_title_photo">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rl_title"
+            android:numColumns="4" />
+    </com.bluebud.view.RefreshLayout>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/btn_tackphoto"
+        style="@style/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="11dp"
+        android:text="@string/photograph" />
+<!--android:layout_below="@id/ll_tracker_type"-->
+</RelativeLayout>
+
+    <!--</com.example.song.wave.refresh_view.PullToRefreshView>-->

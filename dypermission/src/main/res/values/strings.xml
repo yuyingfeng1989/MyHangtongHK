@@ -1,0 +1,49 @@
+<resources>
+
+    <string name="permission_storage">Storage space</string>
+    <string name="permission_location">Location information</string>
+    <string name="permission_camera">Photograph permission</string>
+    <string name="permission_dialog_title">Enable%s</string>
+    <string name="permission_dialog_msg">In order for you to use %s normally, need enable following permission.</string>
+    <string name="permission_title">Please allow access%s</string>
+    <string name="permission_denied">We need have the access %1$s, or you will can not use it normally %2$s</string>
+    <string name="permission_denied_with_naac">"Since %1$s cannot get %2$s and it does not work properly, please turn it on and use it. \n\nSet path: Application Management -> %3$s-> Permissions"</string>
+    <string name="permission_cancel">Cancel</string>
+    <string name="permission_ensure">Confirm</string>
+    <string name="permission_reject">Refuse</string>
+    <string name="permission_btn_next">Next</string>
+    <string name="permission_go_to_setting">Go setting</string>
+
+    <string name="title_calendar">Read/write calendar</string>
+    <string name="title_camera">Camera</string>
+    <string name="title_contacts">Read/write contacts</string>
+    <string name="title_location">Read location information</string>
+    <string name="title_microphone">Use microphone</string>
+    <string name="title_phone">Phone status</string>
+    <string name="title_sensors">Sensors</string>
+    <string name="title_sms">Read/write SMS</string>
+    <string name="title_storage">Read/write storage card</string>
+
+    <!--<string name="permission_read_phone_state">Access phone status permission</string>-->
+    <string name="permission_call_phone">Make phone calls from a non-system dialler permission</string>
+    <string name="permission_read_call_log">Read call record</string>
+    <string name="permission_write_call_log">Write users’ contacts data permission</string>
+    <string name="permission_outgoing_calls">Monitor,modify or give up making a call permission</string>
+    <string name="permission_read_storage">Read data permission</string>
+    <string name="permission_write_storage">Write data permission</string>
+    <string name="permission_access_fine_location">GPS receives satellite location permission</string>
+    <string name="permission_access_coarse_location">WIFI or BASE STATION receives location permission</string>
+    <string name="permission_record_audio">Record permission</string>
+    <string name="permission_cameras">Camera permission</string>
+    <string name="permission_send_sms">SMS send permission</string>
+    <string name="permission_receive_sms">SMS receive permission</string>
+    <string name="permission_read_sms">SMS read permission</string>
+    <string name="permission_receive_wap_push">Receive push message from WAP permission</string>
+    <string name="permission_read_calendar">Read calendar permission</string>
+    <string name="permission_read_contacts">Access contacts permission</string>
+    <string name="permission_write_calendar">Write contacts permission</string>
+    <string name="permission_get_accounts">Access contact account permission</string>
+
+    <string name="start_suspension_box">Open suspension frame</string>
+    <string name="suspension_box_prompt">Please open suspension frame switch to use the application functions </string>
+</resources>

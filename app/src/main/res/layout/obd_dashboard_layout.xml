@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:clickable="true">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="182dp"
+        android:layout_above="@+id/obd_view_bottom"
+        android:background="@color/ff0e0e0e" />
+
+    <ImageView
+        android:id="@+id/bg_obd_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/obd_bg_unstart" />
+
+    <View
+        android:id="@+id/obd_view_bottom"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@id/bg_obd_image" />
+
+    <ImageView
+        android:id="@+id/obd_temp_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingBottom="55dp"
+        android:src="@drawable/obd_untemp" />
+
+    <ImageView
+        android:id="@+id/obd_battery_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/obd_temp_image"
+        android:paddingRight="15dp"
+        android:src="@drawable/obd_unbattery" />
+
+    <ImageView
+        android:id="@+id/obd_oil_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/obd_temp_image"
+        android:paddingLeft="15dp"
+        android:src="@drawable/obd_unoil" />
+
+    <com.bluebud.view.DashboardView4
+        android:id="@+id/dashboard_view_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+
+    <!--车辆检测，驾驶数据-->
+    <LinearLayout
+        android:id="@+id/ll_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="25dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/obd_detection_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:padding="5dp"
+            android:src="@drawable/obd_car_detection" />
+
+
+        <ImageView
+            android:id="@+id/obd_driving_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/obd_detection_image"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:padding="5dp"
+            android:src="@drawable/obd_car_driving" />
+    </LinearLayout>
+
+    <!--轨迹围栏-->
+    <LinearLayout
+        android:id="@+id/ll_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="25dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/obd_trajectory_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:padding="5dp"
+            android:src="@drawable/obd_car_trajectory" />
+
+        <ImageView
+            android:id="@+id/obd_fence_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/obd_trajectory_image"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:padding="5dp"
+            android:src="@drawable/obd_car_fence" />
+    </LinearLayout>
+
+
+    <!--今日里程-->
+    <LinearLayout
+        android:id="@+id/ll_obd_daily_mileage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/obd_view_bottom"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/obd_daily_mileage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ll_left"
+            android:text="0.0km"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/obd_daily_mileage"
+            android:text="@string/obd_daily_mileage"
+            android:textColor="@color/obd_f5b9b9b9"
+            android:textSize="12dp" />
+    </LinearLayout>
+    <!--今日油耗-->
+    <LinearLayout
+        android:id="@+id/ll_obd_daily_oil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/obd_view_bottom"
+        android:layout_toRightOf="@id/ll_obd_daily_mileage"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="8dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/obd_daily_oil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.0L"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/obd_daily_oil"
+            android:textColor="@color/obd_f5b9b9b9"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <!--累计总油耗-->
+    <LinearLayout
+        android:id="@+id/ll_obd_total_oil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/obd_view_bottom"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/obd_total_oil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ll_left"
+            android:text="0.0L"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/obd_daily_mileage"
+            android:text="@string/obd_total_oil"
+            android:textColor="@color/obd_f5b9b9b9"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <!--累计总理程-->
+    <LinearLayout
+        android:id="@+id/ll_obd_total_mileage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/obd_view_bottom"
+        android:layout_toLeftOf="@id/ll_obd_total_oil"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingRight="8dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/obd_total_mileage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ll_left"
+            android:text="0.0km"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/obd_daily_mileage"
+            android:text="@string/obd_total_mileage"
+            android:textColor="@color/obd_f5b9b9b9"
+            android:textSize="12dp" />
+    </LinearLayout>
+</RelativeLayout>
+

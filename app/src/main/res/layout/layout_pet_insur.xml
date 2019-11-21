@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_bg"
+    android:orientation="vertical" >
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:scrollbars="none" />
+
+        <LinearLayout
+            android:id="@+id/ll_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:visibility="gone"
+            android:padding="10dp" >
+
+            <Button
+                android:id="@+id/btn_submit"
+                style="@style/btn_submit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:padding="10dp"
+                android:text="@string/agree" />
+
+            <Button
+                android:id="@+id/btn_cancel"
+                style="@style/btn_submit_grey"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1.0"
+                android:padding="10dp"
+                android:text="@string/disagree" />
+        </LinearLayout>
+   
+
+</LinearLayout>

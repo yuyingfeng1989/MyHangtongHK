@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent">#00000000</color>
+    <color name="transparent_half">#60000000</color>
+    <color name="transparent_80">#80000000</color>
+    <color name="transparent_half_white">#80ffffff</color>
+    <color name="transparent_half_white1">#60ffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="white_transparent">#99ffffff</color>
+    <color name="detail_info_bg">#f2f2f2</color>
+    <color name="next_step_tip">#bbe5e3</color>
+    <color name="black">#000000</color>
+    <color name="black_grey">#404040</color>
+    <color name="blue_back">#54aed9</color>
+    <color name="grey_word">#4c4c4c</color>
+    <color name="grey_word_lable">#4b4b4b</color>
+    <color name="green_word_lable">#3e6664</color>
+    <color name="grey_frame">#cccccc</color>
+    <color name="green_text">#79d2ce</color>
+    <color name="green_circle_solid">#4f8fca22</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_view">#b0000000</color>
+    <color name="red">#ff0000</color>
+    <color name="grey_bg">#EEEDF3</color>
+    <color name="line">#f2f2f2</color>
+    <color name="line1">#D1D1D1</color>
+    <color name="bg_orange_bg_nor">#ED5230</color>
+    <color name="bg_orange_bg_pressed">#E0836E</color>
+    <color name="bg_grey_bg_nor">#D6D6D6</color>
+    <color name="bg_grey_bg_pressed">#D4D4D4</color>
+    <color name="bg_white_bg_nor">#FFFFFF</color>
+    <color name="bg_white_bg_pressed">#D9D9D9</color>
+    <color name="bg_theme">#06c1ae</color>
+    <color name="bg_theme_pressed">#50b3af</color>
+    <color name="text_theme">#06c1ae</color>
+    <color name="text_orange">#ED5230</color>
+    <color name="background_gray">#f5f5f5</color>
+    <color name="point_gray">#C0C0C0</color>
+    <color name="line_gray">#cfcece</color>
+    <color name="background_bundling">#feb913</color>
+    <color name="background_unbundling">#ff3b30</color>
+    <color name="text_theme3">#c7eae8</color>
+    <color name="text_9">#999999</color>
+    <color name="text_4d4d4d">#4d4d4d</color>
+    <color name="text_b2">#b2b2b2</color>
+    <color name="text_red">#d64000</color>
+    <color name="opaque">#1A000000</color>
+    <color name="edit_hint">#999999</color>
+    <color name="text_6">#666666</color>
+    <color name="text_3">#333333</color>
+    <color name="text_b6">#b6b6b6</color>
+    <color name="viewfinder_laser">#ffcc0000</color>
+    <color name="text_gary">#9a9a9a</color>
+    <color name="background_f5">#f5f5f5</color>
+    <color name="text_pink">#f46e51</color>
+    <color name="background_pet_text">#1ec7b6</color>
+    <color name="home_passenger">#3399cc</color>
+    <color name="home_clotheslook">#69f1e3</color>
+    <color name="home_clothesdress">#beacf7</color>
+    <color name="round">#60e4e0</color>
+    <color name="text_2e">#2e2e2e</color>
+    <color name="text_a7">#a7a6a6</color>
+    <color name="text_f7">#f76708</color>
+    <color name="text_ffbdbdbd">#ffbdbdbd</color>
+
+
+    <!--odb优化-->
+    <color name="color_333333">#333333</color>
+
+    <!--990-->
+    <color name="color_313133">#313133</color>
+    <color name="color_7D7D7D">#7D7D7D</color>
+
+
+    <color name="color_52bbd3">#52bbd3</color>
+    <color name="color_050505">#050505</color>
+    <color name="color_06c1ae">#06c1ae</color>
+    <color name="color_e8e8e8">#e8e8e8</color>
+    <color name="color_b7b7b7">#b7b7b7</color>
+    <color name="color_a8a8a8">#a8a8a8</color>
+    <color name="color_adadad">#adadad</color>
+
+    <!--790s-->
+    <color name="color_fff7df">#fff7df</color>
+    <color name="color_e7fffb">#e7fffb</color>
+    <color name="color_ecffee">#ecffee</color>
+    <color name="color_eefbff">#eefbff</color>
+    <color name="color_f8f5fe">#f8f5fe</color>
+    <color name="color_fef2fb">#fef2fb</color>
+    <color name="color_f3f7fe">#f3f7fe</color>
+    <color name="color_f0ffe2">#f0ffe2</color>
+    <color name="color_45c894">#45c894</color>
+    <color name="color_a5a5a5">#a5a5a5</color>
+    <color name="color_eeeeee">#eeeeee</color>
+    <color name="color_303030">#303030</color>
+    
+    <!--obd-->
+    <color name="e4e4e4">#e4e4e4</color>
+    <color name="obd_5bbfe4">#5bbfe4</color>
+    <color name="obd_46484a">#46484a</color>
+    <color name="obd_1b1b1b">#1b1b1b</color>
+    <color name="obd_f5ffffff">#f5ffffff</color>
+    <color name="obd_64f6ff">#64f6ff</color>
+    <color name="obd_64c6ff">#64e6ff</color>
+    <color name="obd_72b0ff">#72b0ff</color>
+
+    <color name="obd_6e6e6e">#6e6e6e</color>
+    <color name="obd_212121">#212121</color>
+    <color name="obd_f5b9b9b9">#f5b9b9b9</color>
+    <color name="obd_acacac">#acacac</color>
+    <color name="obd_8ab3af">#8ab3af</color>
+    <color name="obd_57e094">#57e094</color>
+    <color name="obd_37c9ff">#37c9ff</color>
+    <color name="obd_e49458">#e49458</color>
+    <color name="obd_25343c">#25343c</color>
+    <color name="obd_292e3c">#292e3c</color>
+    <color name="obd_3c2e27">#3c2e27</color>
+    <color name="obd_121212">#121212</color>
+    <color name="obd_8e7f6c">#8E7F6C</color>
+    <color name="obd_8a8cb3">#8A8CB3</color>
+    <color name="obd_0e0e0e">#0e0e0e</color>
+    <color name="obd_bf37c9ff">#bf37c9ff</color>
+    <color name="ff0e0e0e">#ff0e0e0e</color>
+    <color name="ffe5feff">#ffe5feff</color>
+
+</resources>

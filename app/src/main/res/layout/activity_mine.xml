@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <!-- 账号信息卡android:background="@drawable/list_item_selector" -->
+
+        <RelativeLayout
+            android:id="@+id/rl_account_information_card"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+           android:background="@color/white">
+
+            <com.bluebud.view.CircleImageView
+                android:id="@+id/iv_tracker_image"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                app:border_width="1dp"
+            	app:border_color="@color/bg_theme" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@+id/iv_tracker_image"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_3"
+                    android:textSize="@dimen/text_15"
+                    android:text="@string/edit_name" />
+
+                <TextView
+                    android:id="@+id/tv_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/text_3"
+                    android:textSize="@dimen/text_14" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/icon_next" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/background_f5" />
+        <!-- 手表的　话本 ，开关机，上课禁用，提醒小助手 -->
+        <include 
+            android:id="@+id/ic_watch720_item"
+            layout="@layout/watch_720_item"
+            android:visibility="gone"/>
+
+ 	<include 
+            android:id="@+id/ic_watch770_item"
+            layout="@layout/watch_770_item"
+            android:visibility="gone"/>
+        
+        <com.bluebud.view.MyListview
+            android:id="@+id/lv_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:listSelector="#00000000"
+            android:focusable="false"
+            android:scrollbars="none" >
+        </com.bluebud.view.MyListview>
+       
+    </LinearLayout>
+
+</ScrollView>

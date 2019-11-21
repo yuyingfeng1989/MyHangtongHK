@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/text_theme">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:paddingStart="15dp"
+            android:paddingEnd="50dp"
+            android:src="@drawable/btn_back_selector" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/geofence_edit"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:gravity="right|center_vertical"
+            android:paddingEnd="15dp"
+            android:text="@string/finish"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/cut_line1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#f2f2f2" />
+
+    <!-- 地图 -->
+
+    <!--<com.baidu.mapapi.map.MapView-->
+        <!--android:id="@+id/bmap_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@+id/rl_layout1" />-->
+
+    <LinearLayout
+        android:id="@+id/rl_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingStart="15dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_layout2"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="@string/geofence_switch"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:id="@+id/cb_switch_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/cb_switch_bg"
+                android:button="@null" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/cut_line2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#f2f2f2" />
+
+        <RelativeLayout
+            android:id="@+id/rl_layout3"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_fence_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="@string/geofence_name"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <com.bluebud.view.LastInputEditText
+                android:id="@+id/et_fence_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15sp"
+                android:layout_toEndOf="@+id/tv_fence_name"
+                android:background="@null"
+                android:gravity="right"
+                android:hint="@string/input_geofence_name"
+                android:maxLength="30"
+                android:textColor="#000000"
+                android:textColorHint="@color/edit_hint"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/cut_line3"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#f2f2f2" />
+
+        <RelativeLayout
+            android:id="@+id/rl_layout5"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/geofence_range"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                tools:ignore="RelativeOverlap" />
+
+
+            <TextView
+                android:id="@+id/tv_fence_range"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:textColor="#bdbdbd"
+                android:drawablePadding="18dp"
+                android:paddingEnd="15dp"
+                android:layout_alignParentEnd="true"
+                android:gravity="center_vertical"
+                android:drawableEnd="@drawable/icon_next_normal"
+                android:textSize="15sp" />
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:paddingEnd="15dp">-->
+
+                <!---->
+                <!---->
+            <!--</LinearLayout>-->
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#f2f2f2" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

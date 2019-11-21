@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rc_normal_bg" >
+
+    <include
+        android:id="@+id/include_title"
+        layout="@layout/chat_title_base" />
+
+    <ListView
+        android:id="@+id/chat_group_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/include_title"
+        android:divider="@color/grey_frame"
+        android:dividerHeight="0.1px"
+        android:scrollbars="none" />
+
+    <RelativeLayout
+        android:id="@+id/chat_ll_null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/chat_operat_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            style="@style/text_base_grey"
+            android:text="@string/chat_add_user_text" />
+
+        <Button
+            android:id="@+id/add_authorizat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chat_operat_text"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/chat_adduser"
+            android:paddingBottom="10dp"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:paddingTop="10dp"
+            style="@style/text_mid_white"            
+            android:text="@string/chat_add_user"
+           />
+    </RelativeLayout>
+
+</RelativeLayout>

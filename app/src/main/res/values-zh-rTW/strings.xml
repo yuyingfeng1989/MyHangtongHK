@@ -1,0 +1,950 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Lite Guardian(HK)</string>
+    <string name="prompt">提示</string>
+    <string name="bind_tracker_prompt">提示：添加時請先開啟設備，等待設備的GSM信號燈正常閃爍後再添加，否則添加可能失敗！</string>
+    <string name="tracker_no">設備序列號</string>
+    <string name="tracker_mobile">聯繫人手機號</string>
+    <string name="apply_range">使用範圍</string>
+    <string name="scan">掃二維碼</string>
+    <string name="scan_text">將二維碼放入框內, 即可自動掃描</string>
+    <string name="username">賬號</string>
+    <string name="password">密碼</string>
+    <string name="password1">確認密碼</string>
+    <string name="input_user_login2">請輸入手機號碼</string>
+    <string name="input_pwd">請輸入8-20位字母或數字</string>
+
+    <string name="input_tracker_name">名稱30個字符以內</string>
+    <string name="input_tracker_mark">備註最多500個字符</string>
+    <string name="input_tracker_sim">SIM卡號 6–20位</string>
+    <string name="input_tracker_phone">緊急聯繫電話</string>
+    <string name="old_passwd">原密碼</string>
+    <string name="input_old_passwd">請輸入原密碼</string>
+    <string name="input_again_new_passwd">請再次輸入新密碼</string>
+    <string name="new_passwd">新密碼</string>
+    <string name="input_new_passwd">請輸入修改密碼</string>
+    <string name="confirm_passwd">重複密碼</string>
+    <string name="input_passwd">請輸入8-20位字符的密碼</string>
+    <string name="input_passwd1">請再次確認密碼</string>
+    <string name="agree">同意</string>
+    <string name="disagree">不同意</string>
+    <string name="forget_password">忘記密碼</string>
+    <string name="help">使用幫助</string>
+    <string name="close">關閉</string>
+    <string name="guangao">廣告</string>
+    <string name="agreement_text">用戶協議</string>
+    <string name="notice">特別提示</string>
+    <!-- 设置 -->
+    <string name="setting">設置</string>
+    <string name="tracker_id">設備ID</string>
+    <string name="import_serail_code">請輸入設備序列號/掃描二維碼</string>
+    <string name="import_sim_code">請輸入用於設備的SIM卡號</string>
+    <string name="time_location">定位頻率設置</string>
+    <string name="reset">恢復出廠設置</string>
+    <string name="check_update">檢查更新</string>
+    <string name="update">更新</string>
+    <string name="time_close">關閉</string>
+    <string name="time_10_second">10秒</string>
+    <string name="time_40_second">30秒</string>
+    <string name="time_1">1分鐘</string>
+    <string name="time_2">2分鐘</string>
+    <string name="time_3">3分鐘</string>
+    <string name="time_5">5分鐘</string>
+    <string name="time_10">10分鐘</string>
+    <string name="time_30">30分鐘</string>
+    <string name="time_60">60分鐘</string>
+    <string name="time_3s">5</string>
+    <string name="time_5s">10</string>
+    <string name="time_8s">30</string>
+    <string name="time_10s">60</string>
+    <string name="time_15s">15</string>
+    <string name="time_30s">30</string>
+    <string name="speed_20">20</string>
+    <string name="speed_40">40</string>
+    <string name="speed_60">60</string>
+    <string name="speed_80">80</string>
+    <string name="speed_100">100</string>
+    <string name="speed_120">120</string>
+    <string name="speed_140">140</string>
+    <string name="speed_160">160</string>
+    <string name="speed_180">180</string>
+    <string name="speed_200">200</string>
+    <string name="position_notice">提示：定位時間間隔越短，設備待機時間越短，請您酌情選擇適當的定位頻率！</string>
+    <string name="version_update">APP軟件</string>
+    <string name="unbind">刪除綁定設備</string>
+    <string name="delect_phonebook">刪除</string>
+    <string name="bind_equipment">綁定設備</string>
+    <string name="bind_equipment_point">未綁定設備，將無法獲取設備定位及接收報警信息推送</string>
+    <string name="skip">跳過</string>
+    <string name="apn_setting">APN設置</string>
+    <string name="apn_hint">提示：如您的所在地設置不為“中國內地”，需要先設置APN才能正常使用設備。設置APN前請開啟設備，等待設備GSM燈正常閃爍，否則設置可能不成功！您將收到回复短信，回复“ok”表示設置成功，回复“fail”表示設置失敗。</string>
+    <string name="apn_watch_hint">提示：如您的所在地設置不為“中國內地”，需要先設置APN才能正常使用設備,設置APN前請開啟設備</string>
+    <string name="apn_sim">設備SIM卡號</string>
+    <string name="apn_text">APN</string>
+    <string name="apn_username_text">用戶名</string>
+    <string name="apn_passwd_text">"密碼"</string>
+    <string name="device_version_update">設備固件</string>
+    <string name="current_version">當前版本</string>
+    <string name="newest_version">最新版本</string>
+    <!-- Toast提示 -->
+    <string name="net_exception">網絡或服務器異常</string>
+    <string name="confirm">確定</string>
+    <string name="cancel">取消</string>
+    <string name="agreement_article">為使用航通守護者應用軟件（以下簡稱“本軟件”）及服務，您（以下或簡稱“用戶”）應當閲讀並遵守《航通守護者用戶協議》（以下簡稱“本協議”）。請您務必審慎閲讀、充分理解各條款內容，特別是免除或者限制責任的條款，限制、免責條款可能以加粗形式提示您注意。
+\r\n\r\n除非您接受本協議所有條款，否則您無權註冊、登錄或使用本協議所涉服務。您的下載、安裝、複製“航通守護者”軟件的行為以及註冊、登錄、使用等行為將視為對本協議的接受，並同意接受本協議各項條款的約束。如您未滿14週歲的，請在法定監護人的陪同下閲讀本條款。如果您代表他人、公司或其他法人實體接受這些條款，則您聲明並保證擁有完全的授權，可使該人員、公司或法人實體接受本協議條款的約束。
+\r\n\r\n香港航通北斗科技有限公司（以下稱"航通集團"或"我們"）為航通守護者 App（以下稱"APP"或本軟件）的實際開發者和運營者。
+\r\n\r\n<b>一. 服務條款的確認及接受</b>
+\r\n1.1 本協議是您與航通集團之間關於您下載、安裝、使用、複製、分享本軟件的應用，以及使用航通集團相關服務所訂立的協議。您同意服務條款及隱私條款並完成註冊程序後，即成為航通守護者的正式用戶。用戶確認：本服務條款是處理雙方權利義務的契約，始終有效，法律另有強制性規定或雙方另有特別約定的，依其規定。
+\r\n1.2 本服務的具體內容由航通集團根據實際情況提供，包括但不限於授權用戶通過其賬號對追蹤器設備持有人進行即時定位、電子圍欄設置、歷史軌跡回放、追蹤授權、GPS數據、運動數據、車輛檢測、駕駛行為分析等。我們可以對其提供的服務予以變更，且航通集團提供的服務內容可能隨時變更。
+\r\n<b>1.3 本服務僅提供追蹤定位相關服務，此服務僅為設備使用者提供定位及提高其人身及財物安全的幫助作用，但並不以任何明示或默示的方式對其使用者的人身、財物安全承擔任何責任或提供以下任何保證（包括但不限於）：</b>
+\r\n<b>(1) 本軟件服務將符合您的實際或特定需求或目的；</b>
+\r\n<b>(2) 本軟件服務的準確性、完整性或及時性；</b>
+\r\n<b>(3) 本軟件服務將不受干擾、無中斷、持續穩定或沒有錯誤；</b>
+\r\n<b>(4) 使用本軟件服務獲得的任何結果或資料的正確性或可靠性；</b>
+\r\n<b>(5) 本軟件服務中的任何錯誤、問題、故障都將得到更正或解決；</b>
+\r\n<b>(6) 經本軟件服務購買或獲得的任何產品、服務或其他內容符合您的期望；</b>
+\r\n<b>(7) 本軟件服務中的第三方服務或外部連結及其指向的內容的準確性、穩定性和完整性；</b>
+\r\n<b>(8) 您提供給航通集團的信息不受任何侵害。</b>
+\r\n<b>1.4 本軟件服務所提供的相關地圖服務是航通集團及其關聯公司研發或已得到相應權利人授權的包括地點查詢、周邊服務、商戶標註等與地理位置相關的服務，具體服務內容由航通集團按照“現狀”向您提供。航通集團有權自行確定本軟件服務的形式和具體內容，航通集團有權自行變更、中止或終止本軟件的部分或全部服務，有權發佈新版本並要求您使用。</b>
+\r\n1.5 我們提供的服務包含免費服務與收費服務。用戶可以通過付費方式購買收費服務。對於收費服務，我們會在用戶使用之前給予用戶明確的告知，只有用戶同意支付費用並完成了支付行為，用戶才能使用該項收費服務。
+\r\n<b>1.6 您理解並同意，航通集團擁有通過本軟件服務的相關軟件向您關聯或展示廣告的權利，並對廣告投放行為不承擔通知義務。您不得以任何方式改變、移除或遮蔽這些廣告，亦不得以任何形式利用航通集團關聯或展示任何廣告。</b>
+\r\n\r\n<b>您理解並清楚，您對本軟件服務中關聯或展示的廣告應當審慎判斷，您通過本軟件服務與廣告商進行任何形式的通訊或商業往來，屬於您與廣告商之間的行為。如果您因前述任何行為而遭受的任何性質的後果或損失，您應向有關廣告商主張權利。</b>
+\r\n1.7 用戶必須自行準備如下設備並承擔如下開支：（1）上網設備，包括並不限於手機或者其他上網終端、調製解調器及其他必備的上網裝置；（2）上網開支，包括並不限於網絡接入費、上網設備租用費、手機流量費等。
+\r\n\r\n<b>二. 賬號註冊</b>
+\r\n2.1 航通守護者賬號註冊資料包括但不限於用戶的郵箱、暱稱、頭像、密碼、註冊或更新賬號時輸入的所有信息以及您在航通守護者商城進行購物時所填寫的所有信息（包括但不限於收貨人姓名、地址、聯繫電話等）。
+\r\n2.2 航通守護者及綁定的設備是基於地理位置的gps定位追蹤產品，用戶註冊時應當授權我們使用其地理位置信息方可註冊賬號。用戶點擊註冊即表明同意我們提取及使用用戶的地理位置信息。
+\r\n2.3 在註冊航通守護者賬號時，用戶應承諾遵守法律法規、國家利益、公民合法權益、公共秩序、社會道德風尚和信息真實性等，且保證在註冊及使用航通守護者賬號時，<b>不得有以下情形：</b>
+\r\n<b>(1) 違反憲法或法律法規規定的；</b>
+\r\n<b>(2) 危害國家安全，洩露國家秘密，顛覆國家政權，破壞國家統一的；</b>
+\r\n<b>(3) 損害國家榮譽和利益的，損害公共利益的；</b>
+\r\n<b>(4) 煽動民族仇恨、民族歧視，破壞民族團結的；</b>
+\r\n<b>(5) 破壞國家宗教政策，宣揚邪教和封建迷信的；</b>
+\r\n<b>(6) 散佈謡言，擾亂社會秩序，破壞社會穩定的；</b>
+\r\n<b>(7) 散佈淫穢、色情、賭博、暴力、兇殺、恐怖或者教唆犯罪的；</b>
+\r\n<b>(8) 侮辱或者誹謗他人，侵害他人合法權益的；</b>
+\r\n<b>(9) 含有法律、行政法規禁止的其他內容或違反航通守護者的其他規定的。</b>
+\r\n<b>2.4 用戶應保證其提供的註冊資料真實、準確、完整、合法有效，用戶註冊資料如有變動的，應及時更新。因用戶提供的註冊資料不符合本條款約定而引起的一切責任及後果（包括但不限於不予註冊、賬戶停用或註銷等），由用戶自行承擔，且我們保留終止用戶使用航通守護者各項服務的權利。</b>
+\r\n2.5 如我們有合理理由認為用戶以虛假信息騙取賬號名稱註冊，或其賬號頭像、簡介等註冊信息存在違法和不良信息的，我們有權採取通知限期改正、暫停使用、註銷登記等措施。
+\r\n2.6 對冒用、關聯機構或社會名人註冊賬號名稱的用戶，我們有權註銷其賬號，並向互聯網信息內容主管部門報告。
+\r\n2.7 用戶在使用本軟件服務或下單購物等活動時，涉及用戶真實姓名/名稱、通信地址、聯繫電話、電子郵箱等隱私信息的，我們將予以嚴格保密，除非得到用戶的授權或法律另有規定，航通集團不會向外界披露。
+\r\n2.8 用戶成功註冊後，將產生用戶名和密碼等賬戶信息，您可以根據本軟件規定更改您的密碼。用戶應謹慎合理的保存、使用其用戶名和密碼。如果發現您的賬號存在未獲授權的使用，或者其他可能危害您的賬號安全的情形時，您應立即修改密碼，並立即以有效方式通知我們，要求暫停相關服務。 您理解航通集團對您的請求採取行動需要合理時間，我們對在採取行動前已經產生的後果（包括但不限於您的任何損失）不承擔法律法規明確規定之外的責任。對於非因我們的原因導致您無法正常使用帳號或他人利用您的賬號所進行的任何行為及因此而產生的後果或損失，請您向相應責任人索賠，我們將提供必要的合理協助。
+\r\n2.9 您所註冊賬號的所有權歸屬於航通集團，使用權僅歸屬於您，除非有其他合法事由，並經過航通集團同意，您不得將賬號贈與、轉讓、售賣、借用或租用給他人。如果發生前述事項，您同意自行承擔因此產生的全部後果和損失，航通集團對此不承擔責任，並保留追究相關行為人法律責任的權利。
+\r\n2.10 您的航通守護者賬戶僅限於您自己使用，嚴禁將您的航通守護者賬戶允許第三人使用，否則由此產生的全部責任將由您和實際使用人承擔連帶責任，航通集團對此不承擔任何責任。
+\r\n2.11 如果您遺失賬號或遺忘密碼，您應當按照本軟件提示的途徑申請找回賬號或修改密碼。航通集團將通過您所提供資料與系統保存資料的一致性決定是否通過您的找回賬號或修改密碼申請，您應當妥善保管註冊資料與密碼保護資料，如果由於您提供的資料不真實、不完整、不準確、不真實或由於航通守護者以外的原因導致您的資料被他人知悉，您可能無法找回賬號或修改密碼。航通守護者不保證您一定可以通過前述方式找回賬號或修改密碼。
+\r\n2.12 依據相關法律法規的規定，我們有權對註冊用戶進行基於移動電話號碼、電子郵箱、地址等真實身份信息認證。對於拒絶進行真實身份信息認證的用戶，我們保留拒絶此用戶使用航通守護者相關服務的權利並有權對用戶進行包括但不限於限制服務使用、關閉賬號等的處理。
+\r\n\r\n<b>三.用戶管理</b>
+\r\n3.1 用戶必須遵守中華人民共和國及國際相關法律法規的規定，獨立對其發佈的內容（包括但不限於文字、圖片等）承擔責任。
+\r\n<b>3.2 用戶理解並同意，其在APP發佈的任何信息（包括但不限於文字、圖片等），均已自動授權我們或航通守護者在包含宣傳推廣在內的各個合法途徑使用。若用戶對我們或航通守護者使用信息的方式存在異議，應在發現後及時聯繫我們或航通守護者進行溝通解決，若用戶未對我們或航通守護者的使用行為提出異議，則默認其同意此種使用行為且無權就上述使用主張權利。</b>
+\r\n3.3 責任承擔
+\r\n用戶須對自己在使用航通守護者服務過程中的行為承擔法律責任。用戶承擔法律責任的形式包括但不限於：對受到侵害者進行賠償，以及在我們首先承擔了因用戶行為導致的行政處罰或侵權損害賠償責任後，用戶應給予我們等額的賠償。若用戶違反以上規定，我們有權作出獨立判斷立即暫停或終止對用戶提供部分或全部服務，包括鎖定、註銷、刪除用戶航通守護者賬號等措施。
+\r\n\r\n<b>四.數據存儲</b>
+\r\n4.1 我們不對用戶在本服務中相關數據的刪除或儲存失敗負責。
+\r\n4.2 我們可以根據實際情況自行決定用戶在本服務中數據的最長儲存期限，並在服務器上為其分配數據最大存儲空間等。
+\r\n4.3 如用戶停止使用本服務或本服務終止，我們可以從服務器上永久地刪除用戶的數據。本服務停止、終止後，我們沒有義務向用戶返還任何數據。
+\r\n\r\n<b>五.所有權及知識產權條款</b>
+\r\n5.1 除本服務中涉及廣告的知識產權由相應廣告商享有或另有約定外，航通集團在本服務中提供的內容（包括但不限於文字、圖片等）的知識產權均歸航通集團所有，但用戶在使用本服務前對自己發佈的內容已合法取得知識產權的除外。
+\r\n5.2 除另有特別聲明外，航通集團提供本服務時所依託軟件的著作權、專利權及其他知識產權及權益均歸航通集團所有。
+\r\n5.3 航通集團在本服務中所涉及的圖形、文字或其組成，以及其他標誌及產品、服務名稱（以下統稱“航通標識”），其著作權或商標權歸航通集團所有。未經航通集團事先書面同意，用戶不得將航通集團標識以任何方式展示或使用或作其他處理，也不得向他人表明用戶有權展示、使用、或其他有權處理航通集團標識的行為。
+\r\n5.4 上述及其他任何航通集團或相關廣告商依法擁有的知識產權均受到法律保護，未經航通集團或相關廣告商書面許可，用戶不得以任何形式進行創造、轉讓、使用或許可授權第三方使用相關衍生作品以及因此直接或間接的獲取任何形式的收益。
+\r\n5.5 除法律另有強制性規定外，未經航通集團（含其關聯企業）明確的特別書面許可，任何單位或個人不得以任何方式非法地全部或部分複製、轉載、引用、連結、抓取或以其他方式使用本站及航通守護者App內的信息內容，否則，航通集團有權追究其法律責任。
+\r\n\r\n<b>六.不可抗力及其他免責條款</b>
+\r\n<b>6.1 在使用本軟件的過程中，可能會遇到不可抗力等風險因素，使服務發生中斷。不可抗力是指不能預見、不能克服並不能避免且對一方或雙方造成重大影響的客觀事件，包括但不限於自然災害如洪水、地震、瘟疫流行和風暴等以及社會事件如戰爭、動亂、政府行為等。出現上述情況時，航通集團將努力在第一時間與相關單位配合，及時進行修復，但是由此給用戶或第三方造成的損失，航通集團及合作單位在法律允許的範圍內免責。</b>
+\r\n<b>6.2 本軟件同大多數網絡服務一樣，受包括但不限於用戶原因、網絡服務質量、社會環境等因素的差異影響，可能受到各種安全問題的侵擾，如他人利用用戶的資料，造成現實生活中的騷擾；用戶下載安裝的其它手機軟件或訪問的其他網站中含有“特洛伊木馬”等病毒，威脅到用戶的手機信息和數據的安全，繼而影響本服務的正常使用等等。用戶應加強信息安全及使用者資料的保護意識，要注意加強密碼保護，以免遭致損失和騷擾。除法律法規明確規定要求承擔責任之外，因本款所述原因造成的任何損失由用戶本人自行承擔，我們對此不承擔任何責任。</b>
+\r\n<b>6.3 本軟件存在因不可抗力、手機病毒或黑客攻擊、系統不穩定、所連結或包含的第三方地圖軟件的錯誤、用戶所在位置、用戶關機以及其他任何技術、互聯網絡、通信線路原因等造成的服務中斷或不能滿足用戶要求或相關定位、追蹤、車輛數據、行程數據、警報數據等出現偏差的風險，因此導致的用戶或第三方任何損失，航通集團不承擔任何責任。</b>
+\r\n<b>6.4 為便利您的操作和豐富您的體驗，本軟件可能包含一些非航通集團的第三方的服務、內容或者連結。您可以選擇訪問這些第三方連結，或者使用這些第三方產品或服務，但這些第三方的內容不受航通集團的控制，僅為本軟件提供的便利，您使用非航通集團服務及通過非航通集團服務獲得任何商品、服務或內容所可能引發的任何風險和後果由您本人自行承擔，航通集團對此不承擔責任；除本軟件註明之服務條款外，其他一切因使用本軟件而可能遭致的意外、疏忽、侵權及其造成的損失（包括因下連結到的第三方網站內容而感染電腦病毒），本軟件對其概不負責，亦不承擔任何法律責任。</b>
+\r\n<b>6.5 航通集團需要定期或不定期地對平台或相關的設備進行檢修或者維護，如因此類情況而造成服務在合理時間內的中斷，航通集團無需為此承擔任何責任，除不可抗力情況外，航通集團應事先進行通告。</b>
+\r\n<b>6.6 航通集團依據法律法規、本協議約定獲得處理違法違規或違約內容的權利，該權利不構成航通集團的義務或承諾，航通集團不保證及時發現違法違規或違約行為或進行相應處理。</b>
+\r\n<b>6.7 對於航通集團向用戶提供的下列產品或者服務的質量缺陷及其引發的任何損失，航通集團無需承擔任何責任：</b>
+\r\n<b>(1) 航通集團向用戶免費提供的服務；</b>
+\r\n<b>(2) 航通集團向用戶贈送的任何產品或者服務。</b>
+\r\n<b>6.8 在任何情況下，航通集團均不對任何間接性、後果性、懲罰性、偶然性、特殊性的損害或損失，包括但不限於用戶因使用我們的設備或本服務而遭受的利潤損失或任何民事、刑事或行政責任等，承擔責任（即使航通集團已被告知該等損失的可能性亦然）。儘管本協議中可能含有相悖的規定，航通集團對用戶承擔的全部責任，無論因何原因或何種行為方式，始終不超過用戶因使用航通集團提供的服務而支付給航通集團的費用金額（如有）。</b>
+\r\n\r\n<b>七.用戶隱私條款</b>
+\r\n航通集團非常重視用戶信息的保護，在使用本軟件服務前，請您務必仔細閲讀並透徹理解本用戶隱私條款。否則，請不要向本軟件提交任何您的個人數據。本條款旨在告知您我們關於收集、使用和披露您通過網站及航通守護者App提交給我們的任何個人信息和匿名信息的政策和行為規範。
+\r\n下載航通守護者App即表示您已閲讀、理解並同意本隱私條款全文。如果您不同意本隱私條款的所有內容，您的唯一且獨有的補救措施就是立即停止使用本APP。
+\r\n7.1 用戶同意
+\r\n通過航通守護者App提交個人信息，即表示您同意本隱私條款並明確同意按照本條款約定對您的個人信息進行處理。我們對您個人信息的處理可能在收集信息的所在國進行，也可能在其他國家進行。
+\r\n7.2 我們收集的信息
+\r\n1）個人信息的收集和使用
+\r\n航通集團尊重並保護所有用戶的個人隱私權，您註冊的用戶名、電子郵件地址、社交帳號、聯繫方式等法律、法規規定的個人信息，非經您親自許可或根據相關法律、法規的強制性規定，我們不會主動地洩露給第三方。
+\r\n本軟件提供的某些服務會需要您輸入您的個人信息和設備資料，如手機號碼、電子郵箱、社交賬號信息、體貌特徵、所在城市等；當您使用航通守護者App管理設備時，我們會收集設備資料、設備SIM卡號、設置的電話本、車輛檢測及駕駛行為等；當您使用航通守護者App 上傳歷史數據給我們時，我們會收集您的相關個人信息和設備數據；當您在航通守護者商城下單購物或者在線續費時，我們會收集收貨人姓名、地址及電話等信息。某些服務會為您提供數據同步、分享和儲存的功能。為實現此等上述服務和功能，我們將會收集和儲存您輸入、上傳、下載或者獲取的數據，儘管我們採取了足夠合理的措施保證這些數據的安全，但是任何安全措施都不是完美或不可突破的。我們亦不會在任何情況之下將這些數據用以識別任何個人。
+\r\n2）非個人信息的收集和使用
+\r\n“非個人信息”是指那些無法據其識別特定個人的信息。
+\r\n比如，您通過本軟件接入智能硬件的各種硬件數據，包括但不限於設備自檢數據、周圍環境質量、使用頻率、設備型號等設備相關數據等。以上數據信息都採用匿名的方式，同時，我們也會對信息採取加密處理，保證信息的安全性。通過蒐集這些信息，我們可以瞭解如何使我們的網站、產品或服務更符合客戶的需求。航通集團可以自行決定收集、使用、轉讓，並考慮為其他目的公開這些信息。
+\r\n3）從其他資源得到的個人信息
+\r\n我們可能通過包括郵件、電話或傳真在內的其他資源獲得您的個人信息。我們可能將這些信息與我們已通過本網絡收集的您的信息合併在一起，從而改進我們提供的產品和服務。
+\r\n4）用戶反饋
+\r\n如果您在本網站上向我們提供反饋，對於反饋中包含的您的個人信息，我們亦會按照本條款的約定進行保密，我們也將利用這些反饋信息來更好的提升我們的產品及服務。
+\r\n7.3 您在本軟件中輸入、存儲的信息及本軟件收集的數據，航通集團用於為實現和改善平台服務及法律規定的合理範圍內進行使用。
+\r\n航通集團可能會與合作夥伴共同向您提供您所要求的服務或者共同向您展示和提供您可能感興趣的內容和服務。在信息為該項服務所必須的情況下，您同意航通集團可與其分享必要的信息。但以上分享不包含您的任何身份識別信息，且航通集團會要求其確保數據安全並且禁止用於任何其他用途。除此之外，航通集團不會向任何無關第三方提供或分享信息。
+\r\n航通集團可能會對產品使用情況進行統計。同時，可能會與公眾分享這些統計信息，以展示我們服務的整體使用趨勢。這些統計信息不包含您的任何身份識別信息。
+\r\n7.4 個人信息披露
+\r\n在如下情況下，我們可能會披露您的信息：
+\r\n（1）事先獲得您的授權；
+\r\n（2）您使用共享功能；
+\r\n（3） 根據法律、法規、法律程序的要求或政府主管部門的強制性要求；
+\r\n（4） 以學術研究或公共利益為目的；
+\r\n（5）為維護航通集團的合法權益，例如查找、預防、處理欺詐或安全方面的問題；
+\r\n（6） 符合相關服務條款或使用協議的規定。
+\r\n7.5 其他
+\r\n基於航通守護者App運營考慮和需要，本軟件可能包含一些非航通集團的第三方的服務、內容或者連結。鑒於這些第三方的內容不受航通集團的控制，因此航通集團亦不控制第三方的隱私保護措施，第三方的隱私保護措施亦不受本政策約束，您選擇向與航通集團無關的第三方提供的任何信息不在本隱私政策的適用範圍之內，請您查看並遵守這些第三方服務、網站上發佈的相關隱私規定。
+\r\n\r\n<b>八.協議更新</b>
+\r\n根據國家法律法規的更新及應用程序、網站運營需要，我們有權對本條款不時地進行修改，修改後的服務條款一旦被張貼在本站上即生效力，並代替原來的服務條款。用戶可隨時登錄查閲最新服務條款內容。如用戶不同意更新後的服務條款，應立即停止接受我們提供的服務；如用戶繼續使用我們提供的服務，即視為同意更新後的服務條款。我們建議您在使用本站之前閲讀本服務條款及本站的公告。如果本服務條款中任何一條被視為廢止、無效或因任何理由不可執行，該條應視為可分的且並不影響任何其餘條款的有效性和可執行性。
+\r\n\r\n<b>九.法律管轄和適用</b>
+\r\n本服務條款的訂立、執行和解釋及爭議的解決均應適用在中華人民共和國大陸地區現行之有效法律。 如發生本服務條款的某些內容與適用之法律相牴觸時，則這些條款將完全按法律規定重新解釋，而其它有效條款繼續有效。如締約方就本條款內容或其執行發生任何爭議，雙方應儘力友好協商解決；協商不成時，任何一方均可向航通集團所在地香港特別行政區法院提起訴訟。
+\r\n\r\n<b>十.其他</b>
+\r\n10.1 本用戶協議條款構成您與航通集團之間就使用航通守護者軟件服務全部的協議或理解，航通集團在法律允許的範圍內對本用戶協議條款擁有解釋權。
+\r\n10.2 本用戶服務條款的所有標題僅為閲讀方便，本身並無實際涵義，不得作為本用戶服務條款涵義解釋的依據。
+\r\n10.3 航通守護者的所有者是指在政府部門依法許可或備案的航通守護者App的經營主體。
+\r\n10.4 我們尊重用戶和消費者的合法權利，本服務條款及本站上發佈的各類規則、政策、聲明等其他內容，均是為了更好的、更加便利的為用戶和消費者提供服務。航通守護者歡迎用戶和社會各界提出意見和建議，我們將虛心接受並適時修改本服務條款及相關政策、規則。
+\r\n<b>10.5 本協議內容中以黑體、加粗等方式顯著標識的條款，請用戶著重閲讀。</b>
+\r\n<b>10.6 您完成註冊且成為航通守護者的註冊用戶則意味著您完全接受本服務條款，在註冊之前請您再次確認已知悉並完全理解本服務條款的全部內容。</b></string>
+
+    <!-- add -->
+    <string name="login">登錄</string>
+    <string name="register_tips2">《用戶協議》</string>
+    <string name="account">賬號</string>
+    <string name="reset_assword">重置密碼</string>
+    <string name="change_account_confirm">帳號退出後，將無法接收報警推送！</string>
+    <string name="shake">震動</string>
+    <string name="lift_helper">提醒小助手</string>
+    <string name="tracker_info">信息卡</string>
+    <string name="locus">軌跡</string>
+    <string name="shopping">產品訂購</string>
+    <string name="location">定位</string>
+    <string name="geofence_setting">圍欄設置</string>
+    <string name="geofence_switch">圍欄開關</string>
+    <string name="geofence_name">圍欄名稱</string>
+    <string name="geofence_range">圍欄範圍</string>
+    <string name="geofence_edit">編輯圍欄</string>
+    <string name="input_geofence_name">請輸入圍欄名稱</string>
+    <string name="alarm_note">報警</string>
+    <string name="submit">提&#160;&#160;&#160;&#160;交</string>
+    <string name="submit1">提交</string>
+    <string name="network_error">請檢查您的網絡連接是否正常</string>
+    <string name="myself">我的賬號</string>
+    <string name="alarm_sos">SOS報警</string>
+    <string name="alarm_over">越界報警</string>
+    <string name="alarm_low_voltage">低電報警</string>
+    <string name="alarm_fall_off">脫落報警</string>
+
+    <string name="alarm_tow">拖吊報警</string>
+    <string name="alarm_power_line">主電剪線報警</string>
+    <string name="alarm_speed">超速報警</string>
+    <string name="alarm_blackout">拔出報警</string>
+    <string name="alarm_water">水溫報警</string>
+    <string name="alarm_all">所有類型</string>
+    <string name="content">內容</string>
+    <string name="feedback_hint">親，請輸入你的寶貴意見！</string>
+    <string name="content_is_null">內容不能為空</string>
+    <string name="search_fail">抱歉，未找到結果</string>
+
+    <!-- add -->
+    <string name="input_tracker_phone1_null">請輸入手機號碼</string>
+    <string name="input_tracker_contect">電話號碼應在20位以內</string>
+    <string name="apn_null">APN不能為空</string>
+    <string name="apn_len_notice">APN長度為0-30個字符</string>
+    <string name="apn_username_len_notice">用戶名長度為0-30個字符</string>
+    <string name="apn_passwd_len_notice">密碼長度為0-20個字符</string>
+    <string name="head_portrait">是否上傳頭像？</string>
+    <string name="file_no_find">未找到上傳文件</string>
+    <string name="no_deviceno">設備序列號不能為空！</string>
+    <string name="simno_error">請您確保正確填入設備sim卡號，否則APN設置將失敗！</string>
+    <string name="no_email">郵箱不能為空</string>
+    <string name="no_passwd">密碼不能為空</string>
+    <string name="no_confarm_passwd">確認密碼不能為空</string>
+    <string name="email_error">請輸入正確的郵箱</string>
+    <string name="phone_error">請輸入正確的手機號碼</string>
+    <string name="notice_passwd">您好，密碼修改鏈接已發送到您的郵箱，請查收！</string>
+    <string name="check_email">查收郵件</string>
+    <string name="date_error">日期輸入錯誤</string>
+    <string name="start">開始：</string>
+    <string name="start1">開始</string>
+    <string name="pet_walk_continue">繼續</string>
+    <string name="end">結束:</string>
+    <string name="end1">結束</string>
+    <string name="time_error">開始時間不能大於結束時間</string>
+    <string name="no_username_or_passwd">用戶名或密碼不能為空！</string>
+    <string name="passwd_error">密碼格式錯誤,請輸入8-20位字母或數字</string>
+    <string name="prompt_unbind">未綁定</string>
+    <string name="bind">立即綁定</string>
+    <string name="passwd_is_empty">原密碼、新密碼或確認密碼不能為空！</string>
+    <string name="passwd_not_same">兩次輸入的密碼不一致，請重新輸入！</string>
+    <string name="prompt_reset">恢復出廠設置</string>
+    <string name="notice_reset">您的電子圍欄、定位頻率、聯繫人號碼、報警設置信息將被恢復為初始值。</string>
+    <string name="notice_auth">是否確定要取消授權？</string>
+    <string name="unauth">取消授權</string>
+    <string name="not_unauth">不取消授權</string>
+    <string name="authed_account">已授權用戶</string>
+    <string name="authed_account1">授權用戶</string>
+    <string name="no_authed_account">該設備暫無授權賬號</string>
+    <string name="pet">寵物</string>
+
+    <!--绑定界面-->
+    <string name="pet_equipment_info1">寵物設備</string>
+    <string name="whatch_equipment_info1">兒童手錶</string>
+    <string name="sos_equipment_info1">個人設備</string>
+    <string name="car_equipment_info1">汽車設備</string>
+    <string name="moto_equipment_info1">摩托車設備</string>
+    <string name="old_people_watch">老人手錶</string>
+
+    <string name="pet_gridview">寵物設備</string>
+    <string name="whatch_gridview">兒童手錶</string>
+    <string name="sos_gridview">個人設備</string>
+    <string name="car_gridview">汽車設備</string>
+    <string name="moto_gridview">摩托車設備</string>
+    <string name="bluetooth_gridview">藍牙手錶</string>
+    <string name="old_people_gridview">老人手錶</string>
+    <string name="whatch_3G_gridview">3G智能手錶</string>
+
+
+    <string name="notice_unbind">是否確定刪除設備？</string>
+    <string name="notice_no_trackers">您目前沒有綁定設備，請登錄後重新綁定！</string>
+    <string name="search">查找</string>
+    <string name="auth_device">被授權設備</string>
+    <string name="device_no">設備編號</string>
+    <string name="device_sim_no">SIM卡號</string>
+    <string name="edit_name">暱稱</string>
+    <string name="edit_sex">性別</string>
+    <string name="edit_birthday">生日</string>
+    <string name="edit_age">年齡</string>
+    <string name="edit_stature">身高</string>
+    <string name="edit_pet_type">品種</string>
+    <string name="edit_weight">體重</string>
+    <string name="edit_step">步數</string>
+    <string name="edit_step1">步數：</string>
+    <string name="time_long1">時長：</string>
+    <string name="edit_feature">體貌特徵</string>
+    <string name="edit_address_lose">最後定位地點</string>
+    <string name="car_plate_number">車牌號</string>
+    <string name="car_vin">車架號</string>
+    <string name="car_vin_reminder">請輸入正確的車架號</string>
+    <string name="car_brand">品牌</string>
+    <string name="car_type">車​​型</string>
+    <string name="car_time">購車時間</string>
+    <string name="device_add">添加新設備</string>
+    <string name="device_subtract">刪除當前設備</string>
+    <string name="location_fail">定位失敗</string>
+    <string name="history_alarm_clock">歷史提醒</string>
+    <string name="alarm_clock_list">提醒列表</string>
+    <string name="alarm_clock_add">添加提醒</string>
+    <string name="alarm_clock_title_hint">提醒名稱</string>
+    <string name="alarm_clock_title_input_empty">請輸入提醒標題</string>
+    <string name="alarm_clock_title_input_time">請選擇時間</string>
+    <string name="alarm_clock_title_input_week">請選擇日期</string>
+    <string name="anniversaries">紀念日(每年重複)</string>
+    <string name="repayment_date">還款日(每月重複)</string>
+    <string name="repeat_year">每年重複</string>
+    <string name="repeat_month">每月重複</string>
+    <string name="repeat_every_week">每週重複</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="hour">時</string>
+    <string name="minute">分</string>
+    <string name="week_11">一</string>
+    <string name="week_22">二</string>
+    <string name="week_33">三</string>
+    <string name="week_44">四</string>
+    <string name="week_55">五</string>
+    <string name="week_66">六</string>
+    <string name="week_77">日</string>
+    <string name="week_1">週一</string>
+    <string name="week_2">週二</string>
+    <string name="week_3">週三</string>
+    <string name="week_4">週四</string>
+    <string name="week_5">週五</string>
+    <string name="week_6">週六</string>
+    <string name="week_7">週日</string>
+    <string name="alarm_clock_day">響鈴日期</string>
+    <string name="alarm_clock_time">選擇時間</string>
+    <string name="selecte_date">選擇日期</string>
+    <string name="alarm_clock_time_add">添加一次響鈴時間</string>
+    <string name="delete">刪除</string>
+    <string name="month_no_last">您選擇的日期不是每月存在，如希望每月最後一日提醒，請勾選</string>
+    <string name="month_last">每月最後一日</string>
+    <string name="clear_prompt">是否確定清空所有提醒記錄？</string>
+    <string name="input_must">請輸入APN</string>
+    <string name="radius_error">圍欄半徑請設置為100-5000米之間</string>
+    <string name="radius_to_low">當前設備必須在所設置圍欄範圍內</string>
+    <string name="pay_way">支付方式</string>
+    <string name="order_pay_error">訂單支付失敗</string>
+    <string name="pay_network_error">網絡連接出錯</string>
+    <string name="time_zone_select">選擇時區</string>
+    <string name="current_time">當前時間&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;%s</string>
+    <string name="new_time">校正後時間 &#160;&#160;&#160;%s</string>
+    <string name="time_zone_select_pormpt">請選擇時區</string>
+    <string name="time_zone_prompt">提醒：夏令時用戶如選擇時區後，“校正後時間”仍不正確，請參照“當前時間”修改“校正後時間”即可。</string>
+    <string name="server_no">登陸失敗，獲取服務器地址失敗</string>
+    <string name="phone_number_hint">如：13813877889</string>
+    <string name="go_shopping">我要購買</string>
+    <string name="tracker_prompt_people">航通人個GPS定位器：專業個人追踪監護，防止兒童老人走失！</string>
+    <string name="tracker_prompt_pet">航通寵物GPS定位器：專業寵物追踪監護，防止寵物走失！</string>
+    <string name="tracker_prompt_car">航通摩托車GPS定位器：專業用於摩托車防盜與監控！</string>
+    <string name="tracker_prompt_motor">航通汽車GPS定位器：專業用於汽車防盜與監控！</string>
+    <string name="install_google_map">沒有安裝Google地圖，導航功能不能使用，是否現在去安裝？</string>
+    <string name="install_gaode_map">沒有安裝高德地圖，導航功能不能使用</string>
+    <string name="no_location_point">該設備沒有實時定位，不能使用導航功能</string>
+    <string name="finish">完成</string>
+    <string name="clear_empty">清空</string>
+    <string name="to">-</string>
+    <string name="to1">至</string>
+    <string name="hint_device_no">請輸入設備編號或暱稱</string>
+    <string name="over_speed_value">%skm/h</string>
+    <string name="over_speed_time">%ss</string>
+    <string name="alarm_no_read">未讀報警</string>
+    <string name="speed_unit">%sKM/H</string>
+    <string name="no_super_user">對不起，被授權用戶無法執行此操作</string>
+    <string name="no_gps">無gps數據</string>
+    <string name="guest_no_set">遊客無此項操作權限！</string>
+    <string name="function_introduce_more">更多新功能</string>
+    <string name="function_introduce_title">切換/添加/刪除設備\n都點這裡</string>
+    <string name="function_introduce_device_info">小貼士:里程、計步、卡路里</string>
+    <string name="exit">退出登錄</string>
+    <string name="upgrade_success_prompt">升級文件已發送至設備，請等待設備完成升級並重啟，您現在可以做其他操作。</string>
+    <string name="gps_empty">設備還沒有定位數據</string>
+    <!--<string name="parse_json_failed">解析數據失敗</string>-->
+
+    <!-- 手表 -->
+    <string name="device_watch_add">添加手錶設備</string>
+    <string name="input_watch_sim">請輸入手錶的SIM卡號</string>
+    <string name="device_watch_sim_hint">我們將發送一條信息給手錶，手錶將顯示二維碼，請掃描手錶上的二維碼進行綁定操作。</string>
+    <string name="contact_three">最多可以添加三个紧急联系人，用于接收紧急消息或SOS呼救</string>
+    <string name="contact_add">添加聯繫人</string>
+    <string name="save">保存</string>
+
+    <!-- 定时开关机/上课禁用 -->
+    <string name="time_switch">定時開關機</string>
+    <string name="class_disabled">上課禁用</string>
+    <string name="no_disturbing">免打擾</string>
+    <string name="time_switch_off">關機時間</string>
+    <string name="time_switch_on">開機時間</string>
+    <string name="repeat">重複</string>
+    <string name="remind_type">提醒方式</string>
+    <string name="please_select">請選擇</string>
+    <string name="week">星期</string>
+    <string name="am">上午</string>
+    <string name="pm">下午</string>
+    <string name="week_empty">請選擇星期</string>
+    <string name="switch_time_same">開關機時間不能一樣</string>
+
+
+    <!-- 电话本 -->
+    <string name="telephone_book">電話本</string>
+    <string name="emergency_contact">緊急聯繫人</string>
+    <string name="emergency_contact_empty">請填寫緊急聯繫人手機號碼</string>
+    <string name="telephone_book_prompt">提示：SOS求救時，手錶將會撥打緊急聯繫人號碼（電話本第一位聯繫人），同時發送求救短信給電話本前三位聯繫人。</string>
+    <string name="telephone_add">點擊右上角</string>
+    <string name="telephone_hint">添加聯繫人吧</string>
+
+    <!-- 摩托车提醒 -->
+    <string name="interrupt_power_prompt">斷電提示</string>
+    <string name="interrupt_power_prompt_content">檢測到您的愛車於%s已啟動，請選擇是否要進行斷電設置。</string>
+    <string name="interrupt_power_prompt_content_fail">斷電設置失敗，是否重新設置。</string>
+
+    <!-- 时区 -->
+    <string name="timezone_app">APP時區設置</string>
+
+    <!-- 定时休眠 -->
+    <string name="time_dormancy">定時休眠</string>
+    <string name="everyday">每天</string>
+    <string name="dormancy_prompt">休眠時設備將斷開網絡，停止定位；只能接收報警信息！</string>
+    <string name="dormancy_set_prompt">提示：\n1.若您的設備與您不在同一個時區，開始時間與結束時間指的是您APP設置時區的時間\n2.休眠期間，硬件設備持續運動10s將會解除休眠\n3.休眠期間，硬件設備持續靜止5分鐘，將重新進入休眠；</string>
+    <string name="dormancy_ing">當前設備休眠中請喚醒設備或開機後嘗試</string>
+
+    <!-- 更新提示 -->
+    <string name="update_prompt">更新提示</string>
+    <string name="update_prompt_content">APP有新版本，請更新！</string>
+    <string name="trail_no">當前所選時間段內沒有定位數據</string>
+    <string name="offline_factory_setting">當前設備不在線，無法恢復出廠設置</string>
+    <string name="offline_info_card">當前設備不在線，無法設置信息卡</string>
+    <string name="nodate_location">設備不在線，無法獲取定位</string>
+
+    <!-- guoqz add 20160229. -->
+    <string name="_start">開始</string>
+    <string name="_end">結束</string>
+    <string name="date">日期</string>
+    <string name="no_equipment_tip">還沒有%1$1s?</string>
+    <string name="no_equipment_tip1">還沒有設備?</string>
+    <string name="buy_now">立即購買</string>
+
+    <!-- 标题框 -->
+    <string name="back">返回</string>
+
+    <!-- 验证码注册 -->
+
+    <!-- 汽车记录仪主界面 -->
+    <string name="safe_driver">安全駕駛</string>
+    <string name="ecological_drive">經濟駕駛</string>
+    <string name="today_dileage">總油耗</string>
+    <string name="total_dileage">總里程</string>
+    <!-- 右侧菜单 -->
+
+    <string name="trail">歷史軌跡</string>
+    <string name="authorized_device">被授權設備</string>
+    <string name="service_time">服務截止時間：%1$1s</string>
+    <string name="unbind_device">解綁設備</string>
+    <string name="PT718">PT718</string>
+    <string name="TH213">IDD-213TH</string>
+    <string name="MP620">MPIP-620</string>
+    <string name="PT690">PT690</string>
+    <string name="unbind_device_tips">設備解綁後，將清除所有數據，是否解綁？</string>
+    <string name="determine_auth">確定添加</string>
+
+    <!-- 设置 -->
+
+    <string name="change_passwd">修改密碼</string>
+    <string name="feedback_suggestion">意見反饋</string>
+    <string name="version_detection">版本檢測</string>
+    <string name="about_mine">關於我們</string>
+    <string name="location_frequency">定位頻率</string>
+    <string name="use_help">使用幫助</string>
+    <string name="account_login_issues">航通守護者APP概述</string>
+    <string name="add_delete_device">航通守護者主要功能</string>
+    <string name="apn_set_issuses">設備綁定、授權與解綁</string>
+    <string name="PT718_issuses">航通守護者參數設置</string>
+    <string name="PT719_issuses">PT-718 個人追踪器使用手冊</string>
+    <string name="device_authorize">PT-690 寵物追踪器使用手冊</string>
+    <string name="PT720_issuses">PT-720兒童智能手錶使用手冊</string>
+    <string name="PT880_issuses">HT-880雲智能手錶使用手冊</string>
+    <string name="PT990_issuses">HT-990老人智能手錶使用手冊</string>
+    <string name="HT790s_issuses">HT-790S兒童智能手錶使用手冊</string>
+    <string name="account_login_issues1">航通守護者APP概述</string>
+    <string name="apn_set_issuses1">設備綁定、授權與解綁</string>
+    <string name="PT718_issuses1">航通守護者參數設置</string>
+    <string name="PT719_issuses1">PT-718 個人追踪器使用手冊</string>
+    <string name="device_authorize1">PT-690  寵物追踪器使用手冊</string>
+    <string name="PT720_issuses1">PT-720兒童智能手錶使用手冊</string>
+    <string name="photograph">拍照</string>
+    <string name="select_from_the_phone_album">從手機相冊中選擇</string>
+    <string name="man">男</string>
+    <string name="woman">女</string>
+    <string name="male">GG</string>
+    <string name="female">MM</string>
+    <string name="name">姓名</string>
+    <string name="phone">電話</string>
+    <string name="edit">編輯</string>
+    <string name="all_select">全選</string>
+    <string name="set_read">設為已讀</string>
+    <string name="is_new_ver">已是最新版本</string>
+    <string name="car_detect">車輛檢測</string>
+
+    <!-- 安全驾驶界面 -->
+    <string name="detect_time">檢測時間：</string>
+    <string name="air_oil_system">進氣及燃油系統</string>
+    <string name="ignition_system">點火系統</string>
+    <string name="speed_control_system">車速及怠速控制系統</string>
+    <string name="ecu_control_system">電腦控制系統</string>
+    <string name="emission_control_system">廢氣控制系統</string>
+    <string name="fault_code_detection">故障碼檢測</string>
+
+    <!-- 轨迹 -->
+    <string name="calorie">卡路里：</string>
+    <string name="mileage">里程：</string>
+    <string name="time_long">時長</string>
+    <string name="no_track_date">沒有軌跡數據</string>
+
+    <!-- 导航 -->
+    <string name="today">今天</string>
+    <string name="today_is_lastday">目前已經是最新數據，無法獲取下一天記錄</string>
+
+    <!-- 验证码 -->
+    <string name="again_login1">您的帳號已在其他設備登錄，被迫下線</string>
+    <!--添加微聊  -->
+    <!-- 删除的警情 -->
+    <string name="unchecked_alarm">您未選擇警情，請選擇！</string>
+    <string name="no_alarm_can_not_be_edited">沒有警情信息，無法編輯！</string>
+    <string name="delete_alarm">刪除警情</string>
+    <string name="delete_alarm_point">報警消息刪除後將無法恢復</string>
+
+    <!-- 安全驾驶 -->
+    <string name="safe_drive_a_level_m">安全駕駛評級為 A，安全型。建議您：繼續保持良好的駕駛習慣！</string>
+    <string name="safe_drive_b_level_m">安全駕駛評級為 B，正常。建議您：保持良好駕駛習慣，少超車、少踩油門，以最佳轉速行駛！</string>
+    <string name="safe_drive_c_level_m">安全駕駛評級為 C，危險型。建議您：嚴格控制車速；拒絕駕駛疲勞；提高警惕、謹慎駕駛！</string>
+    <string name="safe_drive_d_level_m">安全駕駛評級為 D，非常危險。建議您：規範駕駛，自覺守法、低速行駛！保障生命車輛安全！</string>
+
+
+    <!-- 经济驾驶 -->
+    <string name="ecnomic_drive_a_level_m">經濟駕駛評級為 A，節油型。建議您：繼續保持良好的駕駛習慣！</string>
+    <string name="ecnomic_drive_b_level_m">經濟駕駛評級為 B，正常。建議您：保持良好駕駛習慣，糾正耗油的駕駛行為！</string>
+    <string name="ecnomic_drive_c_level_m">經濟駕駛評級為 C，費油型。建議您：減少猛剎車、猛起步行為，高擋低速行駛，節省油費支出。</string>
+    <string name="ecnomic_drive_d_level_m">經濟駕駛評級為 D，油老虎型。建議您：少踩剎車緩加油，用經濟速度駕駛愛車，長時間停車請熄火！</string>
+
+    <!-- <string name="safe_drive_a_level">安全駕駛評級為 A，安全性。建議您：繼續保持良好的駕駛習慣！</string>
+     <string name="safe_drive_b_level">安全駕駛評級為 B，正常。建議您：保持良好駕駛習慣，少超車、少踩油門，以最佳轉速行駛！</string>
+     <string name="safe_drive_c_level">安全駕駛評級為 C，危險型。建議您：嚴格控制車速；拒絕駕駛疲勞；提高警惕、謹慎駕駛！</string>
+     <string name="safe_drive_d_level">安全駕駛評級為 E，非常危險。建議您：規範駕駛，自覺守法、低速行駛！保障生命車輛安全！</string>
+
+     &lt;!&ndash; 经济驾驶 &ndash;&gt;
+     <string name="ecnomic_drive_a_level">經濟駕駛評級為 A，節油型。建議您：繼續保持良好的駕駛習慣！</string>
+     <string name="ecnomic_drive_b_level">經濟駕駛評級為 B，正常。建議您：保持良好駕駛習慣，糾正耗油的駕駛行為！</string>
+     <string name="ecnomic_drive_c_level">經濟駕駛評級為 C，費油型。建議您：減少猛剎車、猛起步行為，高擋低速行駛，節省油費支出。</string>
+     <string name="ecnomic_drive_d_level">經濟駕駛評級為 D，油老虎型。建議您：少踩剎車緩加油，用經濟速度駕駛愛車，長時間停車請熄火！</string>
+ -->
+    <!-- 车辆检测 -->
+    <string name="car_test_a_level">保養的不錯，建議您定期體檢！</string>
+    <string name="car_test_b_level">車輛狀況 一般，建去 4S店做個保養！</string>
+    <string name="car_test_c_level">車輛狀況不理想 ，盡快去4S店進行檢查 ！</string>
+    <string name="overspeed_threshold">超速閥值</string>
+    <string name="duration">持續時長</string>
+    <string name="alarm_event">%1$1s於%2$1s在%3$1s發出%4$1s,請您及時確認！</string>
+    <string name="no_nickname">暱稱不能為空</string>
+    <string name="ple_input_name">請輸入用戶名</string>
+    <string name="ple_input_passward">請輸入密碼</string>
+    <string name="again_confirm">重新登錄</string>
+    <string name="catnot_navigation">距離太短，無法導航</string>
+    <string name="walk_around">隨便逛逛</string>
+
+
+    <!-- 主页面 -->
+    <string name="home">首頁</string>
+    <string name="periphery">周邊</string>
+    <string name="mall">商城</string>
+    <string name="mine">我的</string>
+    <string name="final_location_time">最後定位時間：</string>
+
+    <!-- 周边 -->
+    <string name="medical">醫療</string>
+    <string name="beauty">美容</string>
+    <string name="foster_care">寄養</string>
+    <string name="photography">攝影</string>
+    <string name="funeral_and_interment">殯葬</string>
+
+    <string name="no_result">未找到結果</string>
+    <string name="my_watch">我的手錶</string>
+    <string name="device_management">設備管理</string>
+    <string name="member_manager">成員管理</string>
+    <string name="alarm_setting">報警設置</string>
+    <string name="sports_pedometer">運動計步</string>
+    <string name="time_zone_setting">APP時區設置</string>
+    <string name="timezone_watch">手錶時區設置</string>
+    <string name="target_setting">目標設置</string>
+    <string name="advanced_settings">高級設置</string>
+    <string name="map_switch">地圖切換</string>
+    <string name="baidu_map">百度地圖</string>
+    <string name="gaode_map">高德地圖</string>
+    <string name="google_map">谷歌地圖</string>
+    <string name="system_msg">系統消息</string>
+    <string name="alarm_msg">報警消息</string>
+    <string name="pet_walk">遛狗</string>
+    <string name="recording">記錄</string>
+    <string name="current_month_pet_walk_recording">本月遛狗數據</string>
+    <string name="kilometre">公里</string>
+    <string name="time">時間</string>
+    <string name="number_of_time">次數</string>
+    <string name="calories">卡路里</string>
+    <string name="no_online_no_pet_walk">設備不在線，不能遛狗</string>
+    <string name="issued_positioning_failure_frequency">定位頻率下發失敗,請重新開始</string>
+    <string name="pet_walk_point">主人，今天超越歷史，小伙伴們都驚呆了！</string>
+    <string name="pet_walk_point80">汪汪汪，主人今天棒棒的，明天再接再厲吧~</string>
+    <string name="pet_walk_point30">主人，世界那麼大，我還想去溜溜！~</string>
+    <string name="pet_walk_point29">主人，你這麼懶，肯定是不愛我了，嗚嗚~</string>
+    <string name="unfinish_pet_walk">上次遛狗未結束，請先結束！</string>
+    <string name="finish_edit">設備信息不全，去完善信息卡</string>
+    <string name="noOnlinestatus">設備不在線，無法遛狗</string>
+    <string name="whether_end_dog_walk">確定結束遛狗?</string>
+    <string name="end_dog_walk">結束遛狗</string>
+    <string name="people_name">姓名</string>
+    <string name="member_point">提示：成員可以查看定位，設置電子圍欄，查看軌跡；最多可以設置3位成員。</string>
+    <string name="add_members">添加成員</string>
+    <string name="input_members">請輸入添加成員賬號</string>
+    <string name="input_members_name">請輸入成員姓名</string>
+    <string name="ensure_modify">確認修改</string>
+    <string name="my_device">設備資料</string>
+    <string name="my_pet">我的寵物</string>
+    <string name="my_motorcycle">我的摩托車</string>
+    <string name="my_car">我的汽車</string>
+    <string name="hospital">醫院</string>
+    <string name="pharmacy">藥店</string>
+    <string name="bank">銀行</string>
+    <string name="park">公園</string>
+    <string name="car_shop">4S店</string>
+    <string name="repair_shop">修理廠</string>
+    <string name="car_park">停車場</string>
+    <string name="refuel">加油站</string>
+    <string name="repair_shop1">修理店</string>
+    <string name="club">俱樂部</string>
+    <string name="gym">健身房</string>
+    <string name="children_hospital">兒童醫院</string>
+    <string name="school">學校</string>
+    <string name="playground">遊樂場</string>
+    <string name="title_health">健康</string>
+    <string name="title_position">位置</string>
+    <string name="family">家</string>
+
+    <!-- 蓝牙手表 -->
+    <string name="find_watch">找手錶</string>
+    <string name="sports_count_step">運動計步</string>
+    <string name="sleep">睡眠</string>
+    <string name="light_sleep">睡眠質量</string>
+    <string name="deep_sleep">睡眠時長</string>
+    <string name="target_setting_hint">專家建議：每天運動10000步是健康的生活方式。</string>
+    <string name="sleep_H">H</string>
+    <string name="action_time">提醒時間</string>
+    <string name="today_step">今日步數</string>
+    <string name="step_7day">近七天步數</string>
+    <string name="target_step1">目標步數</string>
+    <string name="set_success">設置成功</string>
+    <string name="set_failure">設置失敗</string>
+    <string name="small_sport">少量運動者</string>
+    <string name="proper_sport">適量運動者</string>
+    <string name="high_sport">高強度運動者</string>
+    <string name="select_device_type">選擇設備類型</string>
+    <string name="describe_select">請根據你實際購買的設備類型來綁定</string>
+
+    <!--蓝牙手表新增加  -->
+    <string name="notification_push">通知推送</string>
+    <string name="no_suppert_google">您的手機沒有安裝google play服務，因此無法切換google地圖</string>
+    <string name="members_permissions">成員權限</string>
+
+    <string name="loading">加載中...</string>
+
+    <!--宠物保险  -->
+    <string name="pet_lnsurance">宠物保险</string>
+    <string name="instantly_activated">立即激活</string>
+    <string name="activated">已激活</string>
+    <string name="pls_input_lnsurance_code">请输入宠物保险识别码</string>
+    <string name="pet_insurance_agreement">宠物保险</string>
+    <string name="insurance_information">投保资料</string>
+    <string name="insurance_name_hint">请输入真实姓名，否则影响理赔</string>
+    <string name="insurance_phone_hint">请输入真实手机号，方便联系理赔</string>
+    <string name="insurance_nick_name_hint">请输入宠物昵称</string>
+    <string name="insurance_pet_varieties_hint">请输入宠物品种</string>
+    <string name="insurance_pet_colour_hint">请输入宠物毛色</string>
+    <string name="insurance_pet_age_hint">请输入宠物年龄</string>
+    <string name="insurance_pet_colour">颜色</string>
+    <string name="tail_shape">尾巴形状</string>
+    <string name="straight">直</string>
+    <string name="volume">卷</string>
+    <string name="song">曲</string>
+    <string name="pet_male">公</string>
+    <string name="pet_female">母</string>
+    <string name="order_code">订单编码</string>
+    <string name="lnsurance_start">保险起期</string>
+    <string name="lnsurance_end">保险止期</string>
+    <string name="zero_hour">零时起</string>
+    <string name="fill_time_end">二十四时止</string>
+    <string name="year_old">岁</string>
+
+    <string name="pt720">PT-720</string>
+    <string name="ht770fo">HT-770 / HT-771 / HT-772</string>
+    <string name="pt790">HT-790</string>
+    <string name="pt790s">HT-790S</string>
+    <string name="alarm_clock">鬧鐘</string>
+    <string name="remote_shutdown">遠程關機</string>
+    <string name="remote_restart">遠程重啟</string>
+    <string name="remote_monitoring">遠程監護</string>
+    <string name="remote_photo">遠程拍照</string>
+    <string name="remote_recoder">錄音監聽</string>
+    <string name="remote_monitoring_hint">請輸入監護人SIM卡號</string>
+    <string name="set_alarm_clock">設置鬧鐘</string>
+    <string name="remote_Monitoring_hint">遠程關閉手錶後，無法繼續監護，確定要遠程關機嗎？</string>
+    <string name="remote_Restart_hint">手錶重啟可能需要1分鐘，確定要遠程重啟嗎？</string>
+    <string name="remote_recoder_hint">將自動錄取15秒手錶環境聲音發送至微聊，確認要遠程錄音嗎？</string>
+    <string name="timezone_watch5">手錶時區和語言</string>
+    <string name="select_language">選擇語言</string>
+    <string name="bind_watch_prompt">提示：請掃描手錶後蓋上的二維碼或手動輸入設備ID號進行綁定。</string>
+    <string name="telephone_watch_book_prompt720">提示：sos求救時，手錶將會循環撥打緊急聯繫人號碼（電話本前三位聯繫人），同時發送求救短信給電話本前三位聯繫人。</string>
+    <string name="telephone_watch_book_prompt">提示：sos求救時，手錶將會循環撥打緊急聯繫人號碼（電話本前三位聯繫人），同時發送求救短信給電話本前三位聯繫人。</string>
+    <string name="telephone_watch_book_prompt_790s">提示：sos求救時，手錶將會循環撥打緊急聯繫人號碼（電話本前三位聯繫人）。</string>
+    <string name="HT770_issuses">HT-770兒童智能手錶使用手冊</string>
+    <string name="step_setting">計步設置</string>
+    <string name="step_switch">計步開關</string>
+    <string name="mcc">MCC</string>
+    <string name="mnc">MNC</string>
+    <string name="mcc_hint">請輸入MCC</string>
+    <string name="mnc_hint">請輸入MNC</string>
+    <string name="empty_mcc">MCC不能為空</string>
+    <string name="empty_mnc">MNC不能為空</string>
+    <string name="apn_watch770_hint">提示：若設備插入SIM卡開機後沒有上線，請設置APN。設置APN前需開啟設備，否則可能設置失敗！</string>
+    <string name="alarm_shock">震動報警</string>
+
+    <!--wifi  -->
+    <string name="wifi_setting">WIFI設置</string>
+    <string name="wifi_name">WIFI名稱</string>
+    <string name="wifi_password">WIFI密碼</string>
+    <string name="wifi_name_hint">請輸入WIFI名稱</string>
+    <string name="wifi_password_hint">請輸入WIFI密碼</string>
+    <string name="wifi_reminder">更改WIFI名稱或密碼，設備將會重啓，您確定要更改嗎？</string>
+
+
+    <!--微聊-->
+    <string name="chat_conversation_title">微聊</string>
+    <string name="chat_conversation_member">聊天成員</string>
+    <string name="chat_toast_data_erroy">數據有誤</string>
+    <string name="chat_back_text">退出聊天</string>
+    <string name="chat_add_member">邀請成員</string>
+    <string name="chat_select_user">請選擇用戶</string>
+    <string name="chat_add_user">添加成員</string>
+    <string name="chat_add_user_text">無家庭成員，點擊一下按鈕跳轉至成員管理邀請家庭成員</string>
+    <string name="chat_card_photo">頭像</string>
+    <string name="chat_card_region">地區</string>
+    <string name="chat_card_pe">個人說明</string>
+    <string name="chat_exit_dialog">退出微聊將無法接收該群組消息</string>
+    <string name="chat_loginout">您已被移除該微聊群組</string>
+    <!--支付  -->
+    <string name="expire_time">尊敬的用戶，您的服務將於%s到期，為了保證能夠正常使用，請及時續費！</string>
+    <string name="order_details">服務費</string>
+    <string name="order_name">名稱</string>
+    <string name="package1">套餐</string>
+    <string name="valid_period">有效期</string>
+    <string name="business_expires">企業服務已到期，功能無法正常使用，請聯繫經銷商處理!</string>
+    <string name="device_disabled">您的設備已停用，功能無法正常使用，請聯繫經銷商處理！</string>
+    <string name="immediate_renewal">立即續費</string>
+    <string name="pay">支付</string>
+    <string name="confirm_payment">確認付款</string>
+    <string name="do_not_pay_the_currency">不支持此幣種,請重新選擇</string>
+
+    <!-- <string name="detection_score">檢測得分</string>-->
+    <string name="detection_hint">車輛檢測需要在空曠戶外且在怠速狀態下，檢測過程大約持續1分鐘</string>
+    <string name="detection_turn_off">車輛熄火狀態下無法檢測</string>
+    <string name="detection_run">車輛運行中無法檢測</string>
+
+
+    <!--OBD-->
+    <string name="high_seed">超速</string>
+    <string name="fast_accelarate">急加速</string><!--急加速-->
+    <string name="fast_reduce">急減速</string>
+    <!--怠速-->
+    <string name="obd_score">得分</string>
+
+    <string name="online_unlock_the_car">設備不在線，無法解鎖車</string>
+    <string name="onlinestatus">設備不在線</string>
+    <string name="history_Sun">日</string>
+    <string name="history_Mon">一</string>
+    <string name="history_Tues">二</string>
+    <string name="history_Wed">三</string>
+    <string name="history_Thur">四</string>
+    <string name="history_Fri">五</string>
+    <string name="history_Sat">六</string>
+
+    <!--990情景模式-->
+    <string name="vibrating_990">振動及響鈴</string>
+    <string name="diabolo_990">響鈴</string>
+    <string name="silence_990">靜音</string>
+    <string name="scenery_mode">情景模式</string>
+    <string name="take_medicine">吃藥提醒</string>
+    <string name="take_medicine_set">吃藥提醒設置</string>
+    <string name="take_medicine_reminder">提示語</string>
+    <string name="hint_text">提醒文字</string>
+
+
+    <!--3g智能手表-->
+    <string name="register_limit">密碼應包含數字、字母、特殊字符中的兩種或兩種以上</string>
+
+    <!--支付提示-->
+    <string name="pay_showdialog_content">
+    高級功能
+    \n1.使用所有功能
+    \n2.查看90天歷史軌跡
+    \n3.查看近一年駕駛行為數據
+    \n4.支持手動修改定位頻率
+    \n5.邀請家庭成員共同監護
+    </string>
+
+    <string name="setting_sos">SOS號碼設置</string>
+    <string name="please_enter_number">請輸入緊急聯繫人號碼</string>
+    <string name="number1">號碼1:</string>
+    <string name="number2">號碼2:</string>
+    <string name="sos">SOS</string>
+
+    <!--790-->
+    <string name="rong">響鈴</string>
+    <string name="vibrat">震動</string>
+    <string name="vibrat_rong">響鈴+震動</string>
+    <string name="select_text">選擇</string>
+    <string name="takephoto_success">指令下發成功</string>
+    <string name="remind_message">刪除後將無法恢復，是否刪除所選文件</string>
+    <string name="watch_poweroff">手錶關機</string>
+    <string name="watch_restart">手錶重啟</string>
+    <string name="phone_delete_prompt">是否刪除此聯繫人</string>
+    <string name="phone_limit">電話本已達到上限</string>
+
+    <!--保险-->
+    <string name="disclaimer_title">免責聲明</string>
+    <string name="disclaimer_content">以下商品和服務由第三方或者供應商提供，關於任何內容的準確性及產品的質量，航通守護者(hk)不作任何陳述及保證。如需查詢，請聯酪相關供應商。</string>
+    <string name="disclaimer_read">我已閱讀</string>
+
+    <!--facebook-->
+    <string name="regist_count">註冊賬號</string>
+    <string name="bindle_regist_count">綁定已註冊賬號</string>
+    <string name="syschronous_count_data">同步facebook賬號與原賬號信息</string>
+    <string name="count_data">賬號</string>
+    <string name="regist_login">註冊並登陸</string>
+    <string name="use_agree">使用即表示同意</string>
+    <string name="skip_enter_directly">跳過，直接進入</string>
+    <string name="please_input_mail">請輸入您的郵箱賬號</string>
+    <string name="tv_find_password">找回密碼</string>
+    <string name="bind_facebook">立即綁定</string>
+
+    <string name="count_login">登錄賬號</string>
+    <string name="or">或</string>
+    <string name="regist_new">註冊新賬號</string>
+    <string name="retrieve_find_password">立即找回密碼</string>
+    <string name="input_mail">請輸入郵箱</string>
+
+    <!--课程表-->
+    <string name="class_timetable">課程表</string>
+    <string name="class_timetable_title">課程表</string>
+    <string name="time_setting">時間設置</string>
+    <string name="first_class">第一節</string>
+    <string name="second_class">第二節</string>
+    <string name="third_class">第三節</string>
+    <string name="fourth_class">第四節</string>
+    <string name="fifth_class">第五節</string>
+    <string name="sixth_class">第六節</string>
+    <string name="seventh_class">第七節</string>
+    <string name="eighth_class">第八節</string>
+    <string name="add_course">添加課程</string>
+    <string name="edit_course">修改課程</string>
+    <string name="class_confirm">確認</string>
+    <string name="class_hint">請填寫課程名稱</string>
+
+    <string name="function_controy_title">功能控制</string>
+    <string name="function_controy">功能控制</string>
+    <string name="function_controy_prompt">提示：開啟功能控制，手錶顯示關機/復位/恢復出廠設置功能；關閉功能控制，手錶將會隱藏關機/復位/恢復出廠設置功能</string>
+    <string name="function_shutdown">關機</string>
+    <string name="function_restart">復位</string>
+    <string name="function_reset">恢復出廠設置</string>
+
+    <!--一键拨号-->
+    <string name="phone_title">未設置手錶號碼？</string>
+    <string name="phone_guide">點擊“我的”-“我的手錶”-“SIM卡號”設置</string>
+    <string name="phone_call">通話</string>
+    <string name="phone_set">去設置</string>
+
+    <!--obd-->
+    <array name="obd_driver_titles">
+        <item>日數據</item>
+        <item>週數據</item>
+        <item>月數據</item>
+    </array>
+    <string name="obd_economic_driver">經濟\n駕駛</string>
+    <string name="obd_safe_driver">安全\n駕駛</string>
+    <string name="obd_driver_data">駕駛數據</string>
+    <string name="obd_total_time">總時長</string>
+    <string name="obd_chart_data">圖表數據</string>
+    <string name="obd_day_mileage">公里數(km)</string>
+    <string name="obd_day_oil">油耗量(L)</string>
+    <string name="obd_average_oil">平均油耗(L)</string>
+    <string name="obd_driver_mileage">行駛公里數(km)</string>
+    <string name="obd_average_speed">平均車速(km/h)</string>
+    <string name="obd_driver_time">行駛時間(h)</string>
+    <string name="obd_sharp_turn">急轉彎</string>
+    <string name="obd_daily_mileage">今日里程</string>
+    <string name="obd_daily_oil">今日油耗</string>
+    <string name="obd_total_oil">累計油耗</string>
+    <string name="obd_total_mileage">累計里程</string>
+    <string name="obd_tv_star">起</string>
+    <string name="obd_tv_end">終</string>
+
+    <!--关于我们-->
+    <string name="about_customer">客服熱線：</string>
+    <string name="about_number">(852)2627 3380</string>
+    <string name="about_timer">Mon-Fri 9:00-12:30/13:30-18:00</string>
+    <string name="about_email">電郵：info@castelbeidou.com</string>
+    <string name="about_net_name">網站：</string>
+    <string name="about_net_web">http://www.castelbeidou.com</string>
+    <string name="about_qr_fb">Lite Guardian</string>
+    <string name="about_qr_ytb">產品教學</string>
+</resources>

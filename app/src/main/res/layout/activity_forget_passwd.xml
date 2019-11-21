@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey_bg" />
+
+    <RelativeLayout
+        android:id="@+id/passwd_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/line"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="37dp" >
+
+        <TextView
+            android:id="@+id/tv_passwd"
+            style="@style/text_lable_grey"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/password" />
+
+        <com.bluebud.view.ClearEditText
+            android:id="@+id/et_passwd"
+            style="@style/edit_no_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/iv_show_passwd"
+            android:layout_toRightOf="@+id/tv_passwd"
+            android:hint="@string/input_passwd"
+            android:inputType="textPassword"
+            android:textColorHint="@color/edit_hint" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/iv_show_passwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/btn_hide_passwd"
+            android:clickable="true"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+             />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/devide1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/passwd_layout"
+        android:layout_marginLeft="15dp"
+        android:background="@color/grey_bg" />
+
+    <LinearLayout
+        android:id="@+id/passwd_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/devide1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/text_lable_grey"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="@string/password1" />
+
+        <com.bluebud.view.ClearEditText
+            android:id="@+id/et_confire_passwd"
+            style="@style/edit_no_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:hint="@string/input_passwd1"
+            android:inputType="textPassword"
+            android:textColorHint="@color/edit_hint" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/devide2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/passwd_layout1"
+        android:layout_marginLeft="15dp"
+        android:background="@color/grey_bg" />
+
+    <Button
+        android:id="@+id/btn_confirm"
+        style="@style/btn_next_step_submit"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/devide2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:enabled="false"
+        android:text="@string/confirm" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/btn_register"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="30dp" >
+    </RelativeLayout>
+
+</RelativeLayout>

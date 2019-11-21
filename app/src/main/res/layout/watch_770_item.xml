@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_phone_book1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/list_item_selector"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/phone_book" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="17dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/telephone_book"
+                android:textColor="@color/text_3"
+                android:textSize="@dimen/text_12" />
+        </LinearLayout>
+        <!-- 上课禁用， -->
+
+        <LinearLayout
+            android:id="@+id/ll_class_disabled1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/list_item_selector"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/disable_class" />
+
+            <TextView
+                android:id="@+id/text_class_disable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="17dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/class_disabled"
+                android:textColor="@color/text_3"
+                android:textSize="@dimen/text_12" />
+        </LinearLayout>
+
+        <!-- 闹钟 -->
+
+        <LinearLayout
+            android:id="@+id/ll_alarm_clock"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/list_item_selector"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/icon_naoz" />
+
+            <TextView
+                android:id="@+id/tv_alarm_clock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="17dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/alarm_clock"
+                android:textColor="@color/text_3"
+                android:textSize="@dimen/text_12" />
+        </LinearLayout>
+        <!-- 找手表 -->
+
+        <LinearLayout
+            android:id="@+id/ll_find_watch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/list_item_selector"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/icon_zhaosb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="17dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/find_watch"
+                android:textColor="@color/text_3"
+                android:textSize="@dimen/text_12" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--下半部分-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <!--下半不分第一个占位符-->
+        <LinearLayout
+            android:id="@+id/ll_mine_placeholder1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/list_item_selector"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/image_mine_placeholder1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/name_mine_placeholder1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="17dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/text_3"
+                android:textSize="@dimen/text_12" />
+        </LinearLayout>
+
+        <!--下半不分第二个占位符-->
+        <LinearLayout
+            android:id="@+id/ll_mine_placeholder2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/list_item_selector"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/image_mine_placeholder2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/name_mine_placeholder2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="17dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/text_3"
+                android:textSize="@dimen/text_12" />
+        </LinearLayout>
+
+        <!--下半不分第三个占位符-->
+        <LinearLayout
+            android:id="@+id/ll_mine_placeholder3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/list_item_selector"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/image_mine_placeholder3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/name_mine_placeholder3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="17dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/text_3"
+                android:textSize="@dimen/text_12" />
+        </LinearLayout>
+
+        <!--下半不分第四个占位符-->
+        <LinearLayout
+            android:id="@+id/ll_mine_placeholder4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/list_item_selector"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/image_mine_placeholder4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/name_mine_placeholder4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="17dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/text_3"
+                android:textSize="@dimen/text_12" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

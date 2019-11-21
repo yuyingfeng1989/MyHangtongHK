@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="ranges">
+        <item>個人</item>
+        <item>寵物</item>
+        <item>私家車</item>
+        <item>摩托車</item>
+    </string-array>
+    <string-array name="alarm_type">
+       <item>ACC關</item>
+        <item>SOS報警</item>
+        <item>GPS故障報警</item>
+        <item>超速報警</item>
+        <item>主電剪斷報警</item>
+        <item>低電報警</item>
+        <item>斷電/油</item>
+        <item>拖吊報警</item>
+        <item>越界報警</item>
+        <item>碰撞報警</item>
+        <item>盜車報警</item>
+        <item>超速告警</item>
+        <item>低電壓告警</item>
+        <item>水溫告警</item>
+        <item>急加速告警</item>
+        <item>急減速告警</item>
+        <item>停車未熄火告警</item>
+        <item>拖吊告警</item>
+        <item>轉速高告警</item>
+        <item>上電告警</item>
+        <item>尾氣超標</item>
+        <item>急變道告警</item>
+        <item>急轉彎告警</item>
+        <item>疲勞駕駛告警</item>
+        <item>拔出報警</item>
+        <item>區域告警</item>
+        <item>緊急告警</item>
+        <item>碰撞告警</item>
+        <item>防拆告警</item>
+        <item>非法進入告警</item>
+        <item>非法點火告警</item>
+        <item>OBD剪線告警</item>
+        <item>點火告警</item>
+        <item>熄火告警</item>
+        <item>MIL故障告警</item>
+        <item>未鎖車告警</item>
+        <item>未刷卡告警</item>
+        <item>危險駕駛告警</item>
+        <item>震動告警</item>
+        <item>震動告警</item>
+	<item>脫落報警</item>
+    </string-array>
+    <string-array name="time_zone">
+        <item id="0">請選擇</item>
+        <item id="1">(GMT-12:00)日界線西</item>
+        <item id="2">(GMT-11:00) 中途島，薩摩亞群島</item>
+        <item id="3">(GMT-10:00) 夏威夷</item>
+        <item id="4">(GMT-09:00) 阿拉斯加</item>
+        <item id="5">(GMT-08:00) 蒂華納，下加利福尼亞州</item>
+        <item id="6">(GMT-08:00) 太平洋時間(美國和加拿大)</item>
+        <item id="7">(GMT-07:00) 奇瓦瓦，拉巴斯，馬扎特蘭(新)</item>
+        <item id="8">(GMT-07:00) 山地時間(美國和加拿大)</item>
+        <item id="9">(GMT-07:00) 亞利桑那</item>
+        <item id="10">(GMT-06:00) 瓜達拉哈拉，墨西哥城，蒙特雷(新)</item>
+        <item id="11">(GMT-06:00) 薩斯喀徹溫</item>
+        <item id="12">(GMT-06:00) 中部時間(美國和加拿大)</item>
+        <item id="13">(GMT-06:00) 中美洲</item>
+        <item id="14">(GMT-05:00) 波哥大，利馬，里奧布朗庫</item>
+        <item id="15">(GMT-05:00) 東部時間(美國和加拿大)</item>
+        <item id="16">(GMT-05:00) 印地安那州(東部)</item>
+        <item id="17">(GMT-04:30) 加拉加斯</item>
+        <item id="18">(GMT-04:00) 大西洋時間(加拿大)</item>
+        <item id="19">(GMT-04:00) 拉巴斯</item>
+        <item id="20">(GMT-04:00) 馬瑙斯</item>
+        <item id="21">(GMT-04:00) 聖地亞哥</item>
+        <item id="22">(GMT-03:30) 紐芬蘭</item>
+        <item id="23">(GMT-03:00) 巴西利亞</item>
+        <item id="24">(GMT-03:00) 布宜諾斯艾利斯</item>
+        <item id="25">(GMT-03:00) 格陵蘭</item>
+        <item id="26">(GMT-03:00) 蒙得維的亞</item>
+        <item id="27">(GMT-03:00) 喬治敦</item>
+        <item id="28">(GMT-02:00) 中大西洋</item>
+        <item id="29">(GMT-01:00) 佛得角群島</item>
+        <item id="30">(GMT-01:00) 亞速爾群島</item>
+        <item id="31">(GMT) 格林威治標準時間: 都柏林, 愛丁堡, 倫敦, 里斯本</item>
+        <item id="32">(GMT) 卡薩布蘭卡</item>
+        <item id="33">(GMT) 蒙羅維亞，雷克雅未克</item>
+        <item id="34">(GMT+01:00) 阿姆斯特丹，柏林，伯爾尼，羅馬，斯德哥爾摩，維也納</item>
+        <item id="35">(GMT+01:00) 貝爾格萊德，布拉迪斯拉發，布達佩斯，盧布爾雅那，布拉格</item>
+        <item id="36">(GMT+01:00) 布魯塞爾，哥本哈根，馬德里，巴黎</item>
+        <item id="37">(GMT+01:00) 薩拉熱窩，斯科普里，華沙，薩格勒布</item>
+        <item id="38">(GMT+01:00) 中非西部</item>
+        <item id="39">(GMT+02:00) 安曼</item>
+        <item id="40">(GMT+02:00) 貝魯特</item>
+        <item id="41">(GMT+02:00) 哈拉雷，比勒陀利亞</item>
+        <item id="42">(GMT+02:00) 赫爾辛基，基輔，裡加，索非亞，塔林，維爾紐斯</item>
+        <item id="43">(GMT+02:00) 開羅</item>
+        <item id="44">(GMT+02:00) 明斯克</item>
+        <item id="45">(GMT+02:00) 溫得和克</item>
+        <item id="46">(GMT+02:00) 雅典，布加勒斯特，伊斯坦布爾</item>
+        <item id="47">(GMT+02:00) 耶路撒冷</item>
+        <item id="48">(GMT+03:00) 巴格達</item>
+        <item id="49">(GMT+03:00) 第比利斯</item>
+        <item id="50">(GMT+03:00) 科威特，利雅得</item>
+        <item id="51">(GMT+03:00) 莫斯科，聖彼得堡, 伏爾加格勒</item>
+        <item id="52">(GMT+03:00) 內羅畢</item>
+        <item id="53">(GMT+03:30) 德黑蘭</item>
+        <item id="54">(GMT+04:00) 阿布扎比，馬斯喀特</item>
+        <item id="55">(GMT+04:00) 巴庫</item>
+        <item id="56">(GMT+04:00) 高加索標準時間</item>
+        <item id="57">(GMT+04:00)路易港</item>
+        <item id="58">(GMT+04:30) 喀布爾</item>
+        <item id="59">(GMT+05:00) 塔什幹</item>
+        <item id="60">(GMT+05:00) 葉卡捷琳堡</item>
+        <item id="61">(GMT+05:00) 伊斯蘭堡，卡拉奇</item>
+        <item id="62">(GMT+05:30) 馬德拉斯，加爾各答，孟買，新德里</item>
+        <item id="63">(GMT+05:30) 斯里哈亞華登尼普拉</item>
+        <item id="64">(GMT+05:45) 加德滿都</item>
+        <item id="65">(GMT+06:00) 阿拉木圖，新西伯利亞</item>
+        <item id="66">(GMT+06:00) 阿斯塔納，達卡</item>
+        <item id="67">(GMT+06:30) 仰光</item>
+        <item id="68">(GMT+07:00) 克拉斯諾亞爾斯克</item>
+        <item id="69">(GMT+07:00) 曼谷，河內，雅加達</item>
+        <item id="70">(GMT+08:00) 北京，重慶，香港特別行政區，烏魯木齊</item>
+        <item id="71">(GMT+08:00) 吉隆坡，新加坡</item>
+        <item id="72">(GMT+08:00) 珀斯</item>
+        <item id="73">(GMT+08:00) 台北</item>
+        <item id="74">(GMT+08:00) 伊爾庫茨克，烏蘭巴圖</item>
+        <item id="75">(GMT+09:00) 大坂，札幌，東京</item>
+        <item id="76">(GMT+09:00) 漢城</item>
+        <item id="77">(GMT+09:00) 雅庫茨克</item>
+        <item id="78">(GMT+09:30) 阿德萊德</item>
+        <item id="79">(GMT+09:30) 達爾文</item>
+        <item id="80">(GMT+10:00) 布里斯班</item>
+        <item id="81">(GMT+10:00) 符拉迪沃斯托克</item>
+        <item id="82">(GMT+10:00) 關島，莫爾茲比港</item>
+        <item id="83">(GMT+10:00) 霍巴特</item>
+        <item id="84">(GMT+10:00) 堪培拉，墨爾本，悉尼</item>
+        <item id="85">(GMT+11:00) 馬加丹，索羅門群島，新喀裡多尼亞</item>
+        <item id="86">(GMT+12:00) 奧克蘭，惠靈頓</item>
+        <item id="87">(GMT+12:00) 斐濟，堪察加半島，馬紹爾群島</item>
+        <item id="88">(GMT+13:00) 努庫阿洛法</item>
+    </string-array>
+    
+    <string-array name="contacts_name">
+        <item>DAD</item>
+		<item>MUM</item>
+		<item>爺爺</item>
+		<item>祖母</item>
+		<item>外公</item>
+		<item>外婆</item>
+		<item>哥哥</item>
+		<item>姐姐</item>
+		<item>弟弟</item>
+		<item>妹妹</item>
+	</string-array>
+	
+    <string-array name="fence_range">
+        <item> 100m&#160;&#160;</item>
+        <item> 200m&#160;&#160; </item>
+        <item>300m&#160;&#160;</item>
+        <item>500m&#160;&#160;</item>
+        <item>1000m</item>
+        <item>3000m</item>
+        <item>5000m</item>
+    </string-array>
+
+    <string-array name="contacts_name1">
+        <item>兒子</item>
+        <item>女兒</item>
+        <item>暱稱</item>
+        <item>暱稱</item>
+        <item>暱稱</item>
+        <item>暱稱</item>
+        <item>暱稱</item>
+        <item>暱稱</item>
+        <item>暱稱</item>
+        <item>暱稱</item>
+         </string-array>
+
+</resources>

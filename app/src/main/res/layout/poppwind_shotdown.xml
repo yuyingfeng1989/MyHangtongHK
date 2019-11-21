@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/pop_shotdown_bg"
+        android:orientation="vertical"
+        android:layout_above="@+id/remote_watch_cancel">
+
+        <TextView
+            android:id="@+id/remote_watch_restart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="@string/watch_restart"
+            android:textColor="@color/blue_back" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line" />
+
+        <TextView
+            android:id="@+id/remote_watch_off"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="@string/watch_poweroff"
+            android:textColor="@color/red" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:id="@+id/remote_watch_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/pop_shotdown_bg"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="@string/cancel"
+        android:textColor="@color/blue_back"
+        android:layout_marginBottom="15dp"/>
+
+
+</RelativeLayout>
