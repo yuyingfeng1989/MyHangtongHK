@@ -35,7 +35,7 @@ public class AdvertisingPageActivity extends BaseActivity implements View.OnClic
     private List<Advertisement> parseResult;
     private int size;//设备个数,添加注释
 	private int git;//测试用
-	private int xiugai;//修改
+	private int xiugai;//修改s---------
     private Context mContext;
 
     @Override
