@@ -1,2 +1,0 @@
-include ':app', ':IMLib', ':google-play-services_lib', ':dypermission', ':ShortcutBadger'
-include ':rongIMKit'
